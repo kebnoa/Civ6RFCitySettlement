@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<PanelData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>TestScripts</Name>
+  <App>Civ6</App>
+  <EnterAction />
+  <ExitAction />
+  <CompatibleStates>
+    <string>GameCore_Tuner</string>
+  </CompatibleStates>
+  <LoadStates />
+  <Actions>
+    <ActionData>
+      <Name>CityPlots</Name>
+      <Action>playerID = Game.GetLocalPlayer()
+player = Players[playerID]
+cities = player:GetCities()
+print(cities)
+for i, city in cities:Members() do
+	print("Name: ", city:GetName())
+--	print("CapitalYn: ", city:IsCapital())
+	print("Population: ", city:GetPopulation())
+end</Action>
+      <Location>
+        <X>70</X>
+        <Y>62</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Get Players and Cities</Name>
+      <Action>for k, v in pairs(Players) do
+	if(v:IsInitialized() == true) then
+		message = string.format("Id: %d5, IsMajor: %s, IsHuman: %s, IsBarb: %s, IsAlive: %s", v:GetID(), tostring(v:IsMajor()), tostring(v:IsHuman()), tostring(v:IsBarbarian()), tostring(v:IsAlive()))
+		print(message)	
+	end
+end</Action>
+      <Location>
+        <X>70</X>
+        <Y>109</Y>
+      </Location>
+    </ActionData>
+  </Actions>
+  <StringControls />
+  <IntegerControls />
+  <FloatControls />
+  <BooleanControls />
+  <TableViews />
+  <DataViews />
+  <StatTrackers />
+  <SelectionLists />
+  <MultiselectLists />
+</PanelData>

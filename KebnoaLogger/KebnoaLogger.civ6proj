@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>KebnoaLogger</Name>
+    <Guid>e2fba8b9-8a57-44ed-894f-87a8204ac54f</Guid>
+    <ProjectGuid>c15e8172-ead0-45a5-a214-70ccb1cadaba</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Capture key metrics per turn in order to facilitate some analysis.</Teaser>
+    <Description>Capture key metrics per turn in order to facilitate some analysis.</Description>
+    <Authors>kebnoa</Authors>
+    <SpecialThanks>everyone</SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>false</SupportsMultiplayer>
+    <SupportsHotSeat>false</SupportsHotSeat>
+    <AssemblyName>KebnoaLogger</AssemblyName>
+    <RootNamespace>KebnoaLogger</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><AddGameplayScripts id="Load the KebnoaLoggerMain.lua"><File>Lua/KebnoaLoggerMain.lua</File></AddGameplayScripts><ImportFiles id="NewAction"><File>Lua/KebnoaLoggerMain.lua</File><File>Lua/LuaLogger.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lua\dkjson.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\KebnoaLoggerMain.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\LuaLogger.lua">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
