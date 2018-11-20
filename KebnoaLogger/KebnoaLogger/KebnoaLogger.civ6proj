@@ -16,7 +16,7 @@
     <SupportsHotSeat>false</SupportsHotSeat>
     <AssemblyName>KebnoaLogger</AssemblyName>
     <RootNamespace>KebnoaLogger</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><AddUserInterfaces id="LoadKebnoaLogger"><Properties><Context>InGame</Context></Properties><File>KebnoaLogger.xml</File></AddUserInterfaces><ImportFiles id="ImportLuaIntoGameContext"><Properties><Context>InGame</Context></Properties><File>Lua/LuaLogger.lua</File><File>Lua/dkjson.lua</File><File>Lua/KebnoaCommon.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><AddUserInterfaces id="LoadKebnoaLogger"><Properties><Context>InGame</Context></Properties><File>KebnoaLogger.xml</File></AddUserInterfaces><ImportFiles id="ImportLuaIntoGameContext"><Properties><Context>InGame</Context></Properties><File>Lua/LuaLogger.lua</File><File>Lua/dkjson.lua</File><File>Lua/KebnoaCommon.lua</File><File>Lua/KebnoaTimer.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -32,6 +32,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Lua\KebnoaCommon.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\KebnoaTimer.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Lua\LuaLogger.lua">

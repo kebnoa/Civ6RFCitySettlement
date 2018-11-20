@@ -1,4 +1,4 @@
-log:Trace("Loading David Kolf's JSON for Lua...")
+log:Trace("David Kolf's JSON for Lua load started...")
 
 -- Module options:
 local always_try_using_lpeg = true

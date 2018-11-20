@@ -1,6 +1,6 @@
 --json = require 'C:/SWProjects/KebnoaLogger/lua_scripts/dkjson_kebnoa.lua'
 --include("dkjson_kebnoa.lua")
-local json = loadfile('C:/SWProjects/KebnoaLogger/lua_scripts/dkjson_kebnoa.lua')()
+local json = loadfile('C:/SWProjects/KebnoaLogger/LuaScriptPlaypen/dkjson.lua')()
 
 
 local onEven = { {x =  0, y =  0, r = 0}, {x =  0, y =  1, r = 1}, {x =  1, y =  0, r = 1}, {x =  0, y = -1, r = 1}, {x = -1, y = -1, r = 1},
@@ -33,4 +33,14 @@ for i, d in ipairs(deltas) do
 end
 
 local str = json.encode(onOdd, { indent = false }) --, buffer = buf 
+print(str)
+
+g = {
+	loggerVersion = 1,
+	date = os.date("%Y%m%d"),
+	gameGonfig = {},
+	cityOnSettledLog = {},
+	cityPerTurnLog = {} }
+
+str = json.encode(g)
 print(str)
