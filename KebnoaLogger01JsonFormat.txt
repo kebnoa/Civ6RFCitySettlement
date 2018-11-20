@@ -1,0 +1,55 @@
+kebnoaLoggerTable
+- loggerVersion
+- date
+- gameConfig (gameConfigTable)
+  - leader
+  - difficulty
+  - gameSpeed
+  - mapType
+  - mapSize
+  - players (playersTable has list of # players)
+    - playerName
+    - playerCiv
+- cityOnSettledLog (cityOnSettledLogTable)
+  - settledOn
+  - settledBy
+  - cityPlotInfo (cityPlotInfoTable)
+    - x
+    - y
+    - index
+    - ownerName
+    - ownerCiv
+    - ownerCity
+    - terrain
+    - feature
+    - resource
+    - resourceCount
+    - resourceType
+    - workers
+    - district
+    - hasRiver
+    - isWater
+    - isLake
+    - isCity
+  - ring1PlotInfo (ring1PlotInfoTable)
+    - as for cityPlotIndo
+  - ring2PlotInfo (ring1PlotInfoTable)
+    - as for cityPlotIndo
+  - ring3PlotInfo (ring1PlotInfoTable)
+    - as for cityPlotIndo
+- cityPerTurnLog (cityPerTurnLogTable)
+  - atEndTurn
+    - cityLog (cityLogTable)
+      - ownerName
+      - ptFoodTotal
+      - ptFoodSurplus
+      - ptProductionTotal
+      - ptGoldTotal
+      - ptGoldSurplus
+      - ptScienceTotal
+      - ptCultureTotal
+      - ptFaithTotal
+      - population
+      - amenities
+      - housing
+      - loyalty
