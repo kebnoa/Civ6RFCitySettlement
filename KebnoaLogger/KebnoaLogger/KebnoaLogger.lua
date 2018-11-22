@@ -24,66 +24,71 @@ log:Trace("Kebnoa's common code loaded")
 -- This failed as string gets tooooooo looooong!!!
 gKebnoaLoggerTableAsJsonSlotName = 'gKebnoaLoggerTableAsJson'
 gKebnoaLoggerTableAsJson = GameConfiguration.GetValue(gKebnoaLoggerTableAsJsonSlotName) or
-	string.format("{\"cityOnSettledLog\":[],\"loggerVersion\":1,\"gameGonfig\":[],\"date\":\"%s\",\"cityPerTurnLog\":[]}", os.date("%Y%m%d"))
+	string.format("{\"cityOnSettledLog\":[],\"loggerVersion\":1,\"gameConfig\":[],\"date\":\"%s\",\"cityPerTurnLog\":[]}", os.date("%Y%m%d"))
 gKebnoaLoggerTable = json.decode(gKebnoaLoggerTableAsJson)
 
 gCitiesBeingTrackedTableAsJsonSlotName = 'gCitiesBeingTrackedTableAsJson'
 gCitiesBeingTrackedTableAsJson = GameConfiguration.GetValue(gCitiesBeingTrackedTableAsJsonSlotName) or "[]"
 gCitiesBeingTracked = json.decode(gCitiesBeingTrackedTableAsJson)
+--GameConfiguration.SetValue(gCitiesBeingTrackedTableAsJsonSlotName, json.encode(gCitiesBeingTracked))
 --]]
 gKebnoaLoggerTable = gKebnoaLoggerTable or {
-	loggerVersion = 1,
+	loggerVersion = 2,
 	date = os.date("%Y%m%d"),
-	gameGonfig = {},
+	gameConfig = {},
 	cityOnSettledLog = {},
 	cityPerTurnLog = {}
 }
 
-gStopRecordingCitySettledAtTurn = 5
-gStopRecordingCityPerTurnAtTurn = 50 + gStopRecordingCitySettledAtTurn
+gStopRecordingCitySettledAtTurn = 3
+gTurnsToCaptureDataFor = 50
+gStopRecordingCityPerTurnAtTurn = gStopRecordingCitySettledAtTurn + gTurnsToCaptureDataFor + 1
 gCitiesBeingTracked = gCitiesBeingTracked or {}
 
 -- Record the data of interest when a city is settled. Triggered by Events.CityInitialized
 -- The event provides more parameters but I have no idea what they are for now, so ignoring them
 function RecordCitySettled(playerId, cityId, x, y)
 	log:Trace(string.format("RecordCitySettled called with - player ID: %d, city ID: %d, x: %d, y: %d", playerId, cityId, x, y))
-  local currentTurn = Game.GetCurrentGameTurn()
+	local currentTurn = Game.GetCurrentGameTurn()
+	
 	-- stop recording settled cities as those settled later wont have the right duration to be useable
 	if currentTurn > gStopRecordingCitySettledAtTurn then return end
 
 	local city = Cities.GetCityInPlot(x, y)
-	local cityName = L(city:GetName())
-	-- make a table of cities we record so we can ignore the ones we aren't tracking.
-	gCitiesBeingTracked[cityName] = true
-	GameConfiguration.SetValue(gCitiesBeingTrackedTableAsJsonSlotName, json.encode(gCitiesBeingTracked))
+	local	cityName  = L(city:GetName())
+	-- Track when cities settled so we know when to stop tracking and which to exclude...
+	gCitiesBeingTracked[cityName] = currentTurn
 
 	local cityOnSettledTable = {
-		cityName      = cityName,
-		settledBy     = L(PlayerConfigurations[playerId]:GetLeaderName()),
-		settledOnTurn = currentTurn,
-		cityPlotInfo  = PlotInfoAt(x, y),
-		ring1PlotInfo = {},
-		ring2PlotInfo = {},
-		ring3PlotInfo = {},
+		turn      = currentTurn,
+		cityName  = cityName,
+		ownerName = L(PlayerConfigurations[playerId]:GetLeaderName()),
+		plots     = {},
 	}
 
-	for x, y, ring in PlotCoordinatesInRangeOf(x, y) do
-		if x == nil or y == nil then log:Error("Missing plot coordinates after call to PlotCoordinatesInRangeOf()") return end
+--	cityPlotInfo  = PlotInfoAt(x, y, 0),
+--	ring1PlotInfo = {},
+--	ring2PlotInfo = {},
+--	ring3PlotInfo = {},
 
-    if ring == 1 then
-			table.insert(cityOnSettledTable.ring1PlotInfo, PlotInfoAt(x, y))
-		elseif ring == 2 then
-			table.insert(cityOnSettledTable.ring2PlotInfo, PlotInfoAt(x, y))
-		else
-			table.insert(cityOnSettledTable.ring3PlotInfo, PlotInfoAt(x, y))
-		end
+
+	for x, y, ring in PlotCoordinatesInRangeOf(x, y, 2) do
+		if x == nil or y == nil or ring == nil then log:Error("Missing plot coordinates after call to PlotCoordinatesInRangeOf()") return end
+			table.insert(cityOnSettledTable.plots, PlotInfoAt(x, y, ring))
+--    if ring == 1 then
+--			table.insert(cityOnSettledTable.ring1PlotInfo, PlotInfoAt(x, y))
+--		elseif ring == 2 then
+--			table.insert(cityOnSettledTable.ring2PlotInfo, PlotInfoAt(x, y))
+--		else
+--			table.insert(cityOnSettledTable.ring3PlotInfo, PlotInfoAt(x, y))
+--		end
 	end
 	log:Debug("CityOnSettled Table in JSON format:\n\n" .. json.encode(cityOnSettledTable))
 	table.insert(gKebnoaLoggerTable.cityOnSettledLog, cityOnSettledTable)
 
 	---- time this!!!
 
-	GameConfiguration.SetValue(gKebnoaLoggerTableAsJsonSlotName, json.encode(gKebnoaLoggerTable))
+--	GameConfiguration.SetValue(gKebnoaLoggerTableAsJsonSlotName, json.encode(gKebnoaLoggerTable))
 --	local t = Timer:new()
 --	log:Debug(string.format("CityOnSettled took %s seconds", t:stop()))
 end
@@ -91,6 +96,21 @@ end
 function RecordMetrics()
 	atEndOfTurn = Game.GetCurrentGameTurn() - 1
   log:Trace(string.format("RecordMetrics called on - turn: %d", atEndOfTurn + 1))
+
+	if atEndOfTurn > gStopRecordingCityPerTurnAtTurn then
+		print(string.format("Turn (%s), no longer capturing data, extract recorded data!"))
+		return 
+	end
+
+--	if currentTurn == gStopRecordingCitySettledAtTurn then
+--		log:Debug(string.format("Current Turn: %s and Stop Recording City Settled Turn: %s", currentTurn, gStopRecordingCitySettledAtTurn))
+--		local lastCitySettledOnTurn = 0
+--		for i, v in ipairs(gCitiesBeingTracked) do
+--			if v > lastCitySettledOnTurn then lastCitySettledOnTurn = v end
+--		end
+--	  -- set the stop recording value to 50 more than last turn settled + 1 to cater for capture at start of turn
+--		gStopRecordingCityPerTurnAtTurn = lastCitySettledOnTurn + gTurnsToCaptureDataFor + 1
+--	end
 
 --	-- No need to record anything here afer 55 or so turns
 --		if atEndOfTurn > gStopRecordingCityPerTurnAtTurn then
@@ -103,7 +123,7 @@ function RecordMetrics()
 	if atEndOfTurn == 1 then
 		gameConfigTable = GetGameConfigInfo()
 		log:Debug("GameConfig Table in JSON format:\n\n" .. json.encode(gameConfigTable))
-		table.insert(gKebnoaLoggerTable.gameGonfig, gameConfigTable)
+		table.insert(gKebnoaLoggerTable.gameConfig, gameConfigTable)
 	end
 
 	-- Capture all the player's city's information per turn at start of turn...
@@ -123,20 +143,21 @@ function RecordMetrics()
 
 				-- only do this if the city is in the to track list...
 				local cityName = L(city:GetName())
-				if(	gCitiesBeingTracked[cityName] ) then 
+				if(	gCitiesBeingTracked[cityName] ~= nil ) then 
 
-					cityLogTableEntry = GetCityInfo(playerId, city)
-					if (cityLogTableEntry == nil) then log.Warning("No data in cityLogTable!") end
-					table.insert(cityPerTurnLogTableEntry.cityLog, cityLogTableEntry)
+					cityPerTurnLogTableEntry = GetCityInfo(playerId, city)
+					if (cityPerTurnLogTableEntry == nil) then log.Warning("No data in cityPerTurnLogTable!") end
+					--table.insert(cityPerTurnLogTableEntry.cityLog, cityLogTableEntry)
+					table.insert(gKebnoaLoggerTable.cityPerTurnLog, cityPerTurnLogTableEntry)
 					log:Debug("CityLog Table in JSON format:\n\n" .. json.encode(cityLogTableEntry))
 				end
 			end
 		end
   end
-	log:Debug("CitiesPerTurn Table in JSON format:\n\n" .. json.encode(cityPerTurnLogTableEntry))
-	table.insert(gKebnoaLoggerTable.cityPerTurnLog, cityPerTurnLogTableEntry)
+--	log:Debug("CitiesPerTurn Table in JSON format:\n\n" .. json.encode(cityPerTurnLogTableEntry))
+--	table.insert(gKebnoaLoggerTable.cityPerTurnLog, cityPerTurnLogTableEntry)
 
-	GameConfiguration.SetValue(gKebnoaLoggerTableAsJsonSlotName, json.encode(gKebnoaLoggerTable))
+--	GameConfiguration.SetValue(gKebnoaLoggerTableAsJsonSlotName, json.encode(gKebnoaLoggerTable))
 
 --	local t = Timer:new()
 --	kebnoaLoggerJson = json.encode(gKebnoaLoggerTable)

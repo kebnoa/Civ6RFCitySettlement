@@ -15,12 +15,12 @@ function D2(num) return string.format("%.2f", num) end
 -- Clean up ToolTip strings so string.format and json.encode works as expected
 function TT(str) a, b = str:gsub("%[ICON_Bullet%]", "  "):gsub("%%", "pct"); return a end
 
--- Function that gets the plot (or tile) data for the X, Y co-ordinates provided.
+-- Function that gets the plot (or tile) data for the x, y co-ordinates provided.
 -- Return a table containing key measurements of interest.
--- Warning: No checks are made for whether X or Y are valid!
-function PlotInfoAt (x, y)
-	if x == nil or y == nil then return {} end
-	log:Trace(string.format("PlotInfoAt called with - x: %d, y: %d", x, y))
+-- Warning: No checks are made for whether x, y, or r are valid!
+function PlotInfoAt (x, y, r)
+	if x == nil or y == nil or r == nil then return {} end
+	log:Trace(string.format("PlotInfoAt called with - x: %d, y: %d, r: %d", x, y, r))
 
 	local plot = Map.GetPlot(x, y)
 	local plotOwnerId = plot:GetOwner()
@@ -35,6 +35,7 @@ function PlotInfoAt (x, y)
 	local plotResourceType = plot:GetResourceType() ~= -1 and L("LOC_" .. GameInfo.Resources[plot:GetResourceType()].ResourceClassType .. "_NAME") or "None"
 
 	local plotInfoTableEntry = {
+		r             = r,
 		x             = x,
 		y             = y,
 		index         = plot:GetIndex(),
@@ -61,22 +62,22 @@ end
 -- Returns the x and y co-ordinates of a plot in range, as well as the distance from the origin, with each iteration.
 -- x values wrap at GameInfo.Maps[Map.GetMapSize()].GridWidth like the Civ6 maps do.
 -- Plots with Y values less than 0 or more than GameInfo.Maps[Map.GetMapSize()].GridHeight are discarded.
-function PlotCoordinatesInRangeOf (x, y)
+function PlotCoordinatesInRangeOf (x, y, r)
 	if x == nil or y == nil then return nil end
 	log:Trace(string.format("PlotCoordinatesInRangeOf called with - x: %d, y: %d",x, y))
 	
 	-- chose to hardcode the deltas to speed up execution at the expense of a little memory
 	local deltasOnEvenY = {
-		{x =  0, y =  1, r = 1}, {x =  1, y =  0, r = 1}, {x =  0, y = -1, r = 1}, {x = -1, y = -1, r = 1},
+		{x =  0, y =  0, r = 0}, {x =  0, y =  1, r = 1}, {x =  1, y =  0, r = 1}, {x =  0, y = -1, r = 1}, {x = -1, y = -1, r = 1},
 		{x = -1, y =  0, r = 1}, {x = -1, y =  1, r = 1}, {x =  1, y =  2, r = 2}, {x =  1, y =  1, r = 2}, {x =  2, y =  0, r = 2},
 		{x =  1, y = -1, r = 2}, {x =  1, y = -2, r = 2}, {x =  0, y = -2, r = 2}, {x = -1, y = -2, r = 2}, {x = -2, y = -1, r = 2},
-		{x = -2, y =  0, r = 2}, {x = -2, y =  1, r = 2}, {x = -1, y =  2, r = 2}, {x =  0, y =  2, r = 2}, {x =  1, y =  3, r = 3},
+		{x = -2, y =  0, r = 2}, {x = -2, y =  1, r = 2}, {x = -1, y =  2, r = 2}, {x =  0, y =  2, r = 2},	{x =  1, y =  3, r = 3},
 		{x =  2, y =  2, r = 3}, {x =  2, y =  1, r = 3}, {x =  3, y =  0, r = 3}, {x =  2, y = -1, r = 3}, {x =  2, y = -2, r = 3},
 		{x =  1, y = -3, r = 3}, {x =  0, y = -3, r = 3}, {x = -1, y = -3, r = 3}, {x = -2, y = -3, r = 3}, {x = -2, y = -2, r = 3},
 		{x = -3, y = -1, r = 3}, {x = -3, y =  0, r = 3}, {x = -3, y =  1, r = 3}, {x = -2, y =  2, r = 3}, {x = -2, y =  3, r = 3},
 		{x = -1, y =  3, r = 3}, {x =  0, y =  3, r = 3}, }
 	local deltasOnOddY = {
-		{x =  1, y =  1, r = 1}, {x =  1, y =  0, r = 1}, {x =  1, y = -1, r = 1}, {x =  0, y = -1, r = 1},
+		{x =  0, y =  0, r = 0}, {x =  1, y =  1, r = 1}, {x =  1, y =  0, r = 1}, {x =  1, y = -1, r = 1}, {x =  0, y = -1, r = 1},
 		{x = -1, y =  0, r = 1}, {x =  0, y =  1, r = 1}, {x =  1, y =  2, r = 2}, {x =  2, y =  1, r = 2}, {x =  2, y =  0, r = 2},
 		{x =  2, y = -1, r = 2}, {x =  1, y = -2, r = 2}, {x =  0, y = -2, r = 2}, {x = -1, y = -2, r = 2}, {x = -1, y = -1, r = 2},
 		{x = -2, y =  0, r = 2}, {x = -1, y =  1, r = 2}, {x = -1, y =  2, r = 2}, {x =  0, y =  2, r = 2}, {x =  2, y =  3, r = 3},
@@ -94,15 +95,17 @@ function PlotCoordinatesInRangeOf (x, y)
   
   local plotsInRange = {}
 	local n = 0 -- use this to count the number of elements so can use in iterator function below
-  for i, d in ipairs(deltas) do
-    newX = (x + d.x) % xWrapsAt
-    newY =  y + d.y
---		log:Trace(string.format("PlotCoordinatesInRangeOf - new X: %d, new Y: %d", newX, newY))
-		if (newY >= yMin) and (newY <= yMax) then
-			-- newY in range so increment internal plot index and add to plotInRange
-		  n = n + 1
-      table.insert(plotsInRange, {x = newX, y = newY, ring = d.r})
-    end
+	for i, d in ipairs(deltas) do
+		if d.r <= r then 
+     newX = (x + d.x) % xWrapsAt
+     newY =  y + d.y
+ --		log:Trace(string.format("PlotCoordinatesInRangeOf - new X: %d, new Y: %d", newX, newY))
+ 		 if (newY >= yMin) and (newY <= yMax) then
+ 		 	 -- newY in range so increment internal plot index and add to plotInRange
+		   n = n + 1
+       table.insert(plotsInRange, {x = newX, y = newY, ring = d.r})
+		 end
+		end
   end
 
 --	log:Trace(string.format("PlotCoordinatesInRangeOf - plots in range: %s", tostring(plotsInRange)))
@@ -158,12 +161,13 @@ end
 function GetCityInfo(playerId, city)
 	if playerId == nil or city == nil then return {Error = "Either playerId or city is null"} end
 	log:Trace(string.format("GetCityInfo called with - player ID: %d and city ID: %d",playerId, city:GetID()))
-
+	local atEndOfTurn = Game.GetCurrentGameTurn() - 1
 	local cityGrowth	= city:GetGrowth()
 
 	cityLogTableEntry = {
-		ownerName         = L(PlayerConfigurations[playerId]:GetLeaderName()),
+		turn              = atEndOfTurn,
 		cityName          = L(city:GetName()),
+		ownerName         = L(PlayerConfigurations[playerId]:GetLeaderName()),
 		foodPerTurn       = D2(city:GetYield(YieldTypes.FOOD)),
 		foodToolTip       = TT(city:GetYieldToolTip(YieldTypes.FOOD)),
 		productionPerTurn = D2(city:GetYield(YieldTypes.PRODUCTION)),
@@ -184,4 +188,21 @@ function GetCityInfo(playerId, city)
 	}
 
 	return cityLogTableEntry
+end
+
+-- Function to convert gKebnoaTable to Json and then chunk into small enough bits
+-- so as to NOT break lua.log file ... 
+function PrintKebnoaTableAsJsonToLog()
+	str = json.encode(gKebnoaLoggerTable)
+	maxLen = string.len(str)
+	windowSize = 2040
+	iterations = math.ceil(maxLen / windowSize) - 1
+	for i = 0, iterations, 1
+	do
+		startAt = (i * windowSize ) + 1
+ 		endAt   = (i * windowSize ) + windowSize
+ 		if endAt > maxLen then endAt = maxLen end
+		--  print(string.format("print(string.sub(str, %d, %d))", startAt, endAt))
+		print(string.sub(str, startAt, endAt))
+	end
 end

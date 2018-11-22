@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<PanelData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Kebnoa Logger Utilities</Name>
+  <App>Civ6</App>
+  <EnterAction />
+  <ExitAction />
+  <CompatibleStates>
+    <string>KebnoaLogger</string>
+  </CompatibleStates>
+  <LoadStates />
+  <Actions>
+    <ActionData>
+      <Name>Print gKebnoaTable as JSON</Name>
+      <Action>str = json.encode(gKebnoaLoggerTable)
+maxLen = string.len(str)
+--maxLen = 2041
+windowSize = 2040
+iterations = math.ceil(maxLen / windowSize) - 1
+for i = 0, iterations, 1
+do
+	startAt = (i * windowSize ) + 1
+ endAt   = (i * windowSize ) + windowSize
+ if endAt &gt; maxLen then endAt = maxLen end
+--  print(string.format("print(string.sub(str, %d, %d))", startAt, endAt))
+	print(string.sub(str, startAt, endAt))
+end</Action>
+      <Location>
+        <X>50</X>
+        <Y>47</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Get city info</Name>
+      <Action>playerID = Game.GetLocalPlayer()
+player = Players[playerID]
+cities = player:GetCities()
+print(cities)
+for i, city in cities:Members() do
+	print("city_name: ", city:GetName())
+	print("capital: ", city:IsCapital())
+	print("population: ", city:GetPopulation())
+	cityGrowth = city:GetGrowth()
+	print("housing: ", cityGrowth:GetHousing())
+	-- Culture
+	print("culture_pt: ", Round( city:GetYield( YieldTypes.CULTURE ), 1))
+	-- Food
+	print("food_pt: ", Round( city:GetYield( YieldTypes.FOOD ), 1))
+	food_npt = Round( cityGrowth:GetFoodSurplus() * cityGrowth:GetOverallGrowthModifier(), 1 ) 
+	print("food_npt: ", food_npt)
+	-- Production
+	print("prodution_pt: ", Round( city:GetYield( YieldTypes.PRODUCTION ), 1))
+	-- Science
+	print("science_pt: ", Round( city:GetYield( YieldTypes.SCIENCE ), 1))
+	-- Faith
+	print("faith_pt: ", Round( city:GetYield( YieldTypes.FAITH ), 1))
+	-- Gold
+	print("gold_pt: ", Round( city:GetYield( YieldTypes.GOLD ), 1))
+	cityGold = city:GetGold()
+	print("gold_npt: ", "TBD")
+	-- Tourism
+	print("tourism_gpt: ", "TBD")
+	print("tourism_npt: ", "TBD")
+	-- Amenities
+	net_amenities = cityGrowth:GetAmenities() - cityGrowth:GetAmenitiesNeeded()
+	print("net_amenities: ", net_amenities)
+	
+end
+
+</Action>
+      <Location>
+        <X>50</X>
+        <Y>88</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Get city plot info</Name>
+      <Action>playerID = Game.GetLocalPlayer()
+player = Players[playerID]
+cities = player:GetCities()
+capital = cities:GetCapitalCity()
+print("capital: ", capital:GetName())
+
+print("Capital at (", capital:GetX(), ",", capital:GetY(), ")")
+
+
+--plots1 = Map.GetCityPlots():GetPurchasedPlots( capital )
+--plots2 = Map.GetCityPlots():GetVisiblePurchasedPlots(capital)
+--print(type(plots1))
+
+--cityID = capital:GetID()
+--print("cityID: ", cityID)
+
+--print("population: ", capital:GetPopulation())
+
+--print("1")
+--print(capital)
+--local meta = getmetatable(plots).__index
+--for k,v in pairs(meta) do print(k, type(v), tostring(v)) end
+--for k,v in pairs(plots1) do print(k, type(v), tostring(v)) end
+</Action>
+      <Location>
+        <X>50</X>
+        <Y>129</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Get world rankings</Name>
+      <Action>playerID = Game.GetLocalPlayer()
+player = Players[playerID]
+playerData = { PlayerID = playerID, PlayerScore = player:GetScore(), Categories = {} }
+
+scoreCategories = GameInfo.ScoringCategories
+numCategories = #scoreCategories
+
+for i = 0, numCategories - 1 do
+	if scoreCategories[i].Multiplier &gt; 0 then
+		-- GetCategoryScore is only available in WorldRankings console!?
+		table.insert( playerData.Categories, {CategoryID = i, CategoryScore = player:GetCategoryScore(i) });
+	end
+end
+
+print("PlayerID: ",playerData.PlayerID)
+print("PlayerScore: ",playerData.PlayerScore)
+for i, category in ipairs(playerData.Categories) do
+	categoryInfo = GameInfo.ScoringCategories[category.CategoryID]
+	print("\t", categoryInfo.Name, ": ", category.CategoryScore)
+end
+</Action>
+      <Location>
+        <X>50</X>
+        <Y>217</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>City plots</Name>
+      <Action>playerID = Game.GetLocalPlayer()
+player = Players[playerID]
+cities = player:GetCities()
+print(cities)
+for i, city in cities:Members() do
+	print("Name: ", city:GetName())
+--	print("CapitalYn: ", city:IsCapital())
+	print("Population: ", city:GetPopulation())
+end
+</Action>
+      <Location>
+        <X>160</X>
+        <Y>130</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Players and cities</Name>
+      <Action>for k, v in pairs(Players) do
+	if(v:IsInitialized() == true) then
+		message = string.format("Id: %d5, IsMajor: %s, IsHuman: %s, IsBarb: %s, IsAlive: %s", v:GetID(), tostring(v:IsMajor()), tostring(v:IsHuman()), tostring(v:IsBarbarian()), tostring(v:IsAlive()))
+		print(message)	
+	end
+end
+</Action>
+      <Location>
+        <X>50</X>
+        <Y>171</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Print gKebnoaTable as JSON - n = 499</Name>
+      <Action>str = json.encode(gKebnoaLoggerTable)
+maxLen = string.len(str)
+--maxLen = 2041
+windowSize = 2040
+iterations = math.ceil(maxLen / windowSize) - 1
+for i = 499, iterations, 1
+do
+	startAt = (i * windowSize ) + 1
+ endAt   = (i * windowSize ) + windowSize
+ if endAt &gt; maxLen then endAt = maxLen end
+--  print(string.format("print(string.sub(str, %d, %d))", startAt, endAt))
+	print(string.sub(str, startAt, endAt))
+end
+</Action>
+      <Location>
+        <X>220</X>
+        <Y>47</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Capture Event parameters</Name>
+      <Action>-- Got this from Lee S on civfanatics
+function GetArgumentDatas(sOrigin, tTable)
+	print("============================================================================================")
+	print("[" .. sOrigin .. "]: Dumping Event Hook Argument Data")
+	print("............................................................................................")
+	for k,v in pairs(tTable) do
+		local sKeyType = type(k)
+		local sValueType = type(v)
+		print("[" .. sOrigin .. "]: Key is of type " .. sKeyType .. " = " .. tostring(k) .. ", Value is of type " .. sValueType .. " = " .. tostring(v))
+	end
+	print("............................................................................................")
+	print("[" .. sOrigin .. "]: dump completed for this firing of the event")
+	print("============================================================================================")
+end
+-- This is the trigger and event you are investigating...
+function OnUnitAddedToMap(...)
+	print("Events.UnitAddedToMap fired for function OnUnitAddedToMap")
+	GetArgumentDatas("OnUnitAddedToMap", {...})
+end
+Events.UnitAddedToMap.Add(OnUnitAddedToMap)</Action>
+      <Location>
+        <X>50</X>
+        <Y>265</Y>
+      </Location>
+    </ActionData>
+  </Actions>
+  <StringControls />
+  <IntegerControls />
+  <FloatControls />
+  <BooleanControls />
+  <TableViews />
+  <DataViews />
+  <StatTrackers />
+  <SelectionLists />
+  <MultiselectLists />
+</PanelData>

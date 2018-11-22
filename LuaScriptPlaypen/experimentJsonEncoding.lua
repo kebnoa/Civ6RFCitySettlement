@@ -38,7 +38,7 @@ print(str)
 g = {
 	loggerVersion = 1,
 	date = os.date("%Y%m%d"),
-	gameGonfig = {},
+	gameConfig = {},
 	cityOnSettledLog = {},
 	cityPerTurnLog = {} }
 

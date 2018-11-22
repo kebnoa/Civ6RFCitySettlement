@@ -369,3 +369,8 @@ luac.out
 *.hex
 
 # End of https://www.gitignore.io/api/windows,visualstudio,visualstudiocode
+
+# Ignore Jupyter notebook checkpoints
+### JupyterNotebook ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
