@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <Name>Kebnoa Logger</Name>
-    <Guid>7a487cf2-e7c8-4322-abfb-3c28306504bd</Guid>
+    <Guid>02bf7815-7d90-49d3-a9cf-a50c66106701</Guid>
     <ProjectGuid>c26c9aa5-df25-435a-a487-5b8c76d1a393</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Trying to get this to load in UI context!</Teaser>
@@ -16,7 +16,7 @@
     <SupportsHotSeat>false</SupportsHotSeat>
     <AssemblyName>KebnoaLogger</AssemblyName>
     <RootNamespace>KebnoaLogger</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><AddUserInterfaces id="LoadKebnoaLogger"><Properties><Context>InGame</Context></Properties><File>KebnoaLogger.xml</File></AddUserInterfaces><ImportFiles id="ImportLuaIntoGameContext"><Properties><Context>InGame</Context></Properties><File>Lua/LuaLogger.lua</File><File>Lua/dkjson.lua</File><File>Lua/KebnoaCommon.lua</File><File>Lua/KebnoaTimer.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><AddUserInterfaces id="KebnoaLogger"><Properties><Context>InGame</Context></Properties><File>KebnoaLogger.xml</File></AddUserInterfaces><ImportFiles id="KebnoaLoggerFiles"><Properties><Context>InGame</Context></Properties><File>Lua/LuaLogger.lua</File><File>Lua/dkjson.lua</File><File>Lua/KebnoaCommon.lua</File><File>Lua/KebnoaTimer.lua</File><File>KebnoaLogger.lua</File><File>KebnoaLogger.xml</File></ImportFiles></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>

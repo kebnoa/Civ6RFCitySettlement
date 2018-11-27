@@ -191,12 +191,14 @@ function GetCityInfo(playerId, city)
 end
 
 -- Function to convert gKebnoaTable to Json and then chunk into small enough bits
--- so as to NOT break lua.log file ... 
+-- so as to NOT break lua.log file or FireTuner's lus console... 
+-- Also seems the number of rows is capped at 507/508 based on 2040 windowSize
 function PrintKebnoaTableAsJsonToLog()
 	str = json.encode(gKebnoaLoggerTable)
 	maxLen = string.len(str)
 	windowSize = 2040
 	iterations = math.ceil(maxLen / windowSize) - 1
+	if iterations > 500 then print("Warning: Output is likely to exceed lua.log or lua console capacity!") end
 	for i = 0, iterations, 1
 	do
 		startAt = (i * windowSize ) + 1

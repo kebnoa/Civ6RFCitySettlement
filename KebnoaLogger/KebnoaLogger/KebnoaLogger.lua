@@ -19,21 +19,10 @@ log:Trace("David Kolf's JSON for Lua loaded")
 include("KebnoaCommon.lua")
 log:Trace("Kebnoa's common code loaded")
 
---[[
--- Storing state as a JSON string in the savefile
--- This failed as string gets tooooooo looooong!!!
-gKebnoaLoggerTableAsJsonSlotName = 'gKebnoaLoggerTableAsJson'
-gKebnoaLoggerTableAsJson = GameConfiguration.GetValue(gKebnoaLoggerTableAsJsonSlotName) or
-	string.format("{\"cityOnSettledLog\":[],\"loggerVersion\":1,\"gameConfig\":[],\"date\":\"%s\",\"cityPerTurnLog\":[]}", os.date("%Y%m%d"))
-gKebnoaLoggerTable = json.decode(gKebnoaLoggerTableAsJson)
-
-gCitiesBeingTrackedTableAsJsonSlotName = 'gCitiesBeingTrackedTableAsJson'
-gCitiesBeingTrackedTableAsJson = GameConfiguration.GetValue(gCitiesBeingTrackedTableAsJsonSlotName) or "[]"
-gCitiesBeingTracked = json.decode(gCitiesBeingTrackedTableAsJson)
---GameConfiguration.SetValue(gCitiesBeingTrackedTableAsJsonSlotName, json.encode(gCitiesBeingTracked))
---]]
+-- Need to work on somehow saving the state, 
+-- but as I am only recording first 54 or so turns it isn't critical
 gKebnoaLoggerTable = gKebnoaLoggerTable or {
-	loggerVersion = 2,
+	jsonFormatVersion = 2,
 	date = os.date("%Y%m%d"),
 	gameConfig = {},
 	cityOnSettledLog = {},
@@ -66,31 +55,13 @@ function RecordCitySettled(playerId, cityId, x, y)
 		plots     = {},
 	}
 
---	cityPlotInfo  = PlotInfoAt(x, y, 0),
---	ring1PlotInfo = {},
---	ring2PlotInfo = {},
---	ring3PlotInfo = {},
-
-
 	for x, y, ring in PlotCoordinatesInRangeOf(x, y, 2) do
 		if x == nil or y == nil or ring == nil then log:Error("Missing plot coordinates after call to PlotCoordinatesInRangeOf()") return end
 			table.insert(cityOnSettledTable.plots, PlotInfoAt(x, y, ring))
---    if ring == 1 then
---			table.insert(cityOnSettledTable.ring1PlotInfo, PlotInfoAt(x, y))
---		elseif ring == 2 then
---			table.insert(cityOnSettledTable.ring2PlotInfo, PlotInfoAt(x, y))
---		else
---			table.insert(cityOnSettledTable.ring3PlotInfo, PlotInfoAt(x, y))
---		end
 	end
+
 	log:Debug("CityOnSettled Table in JSON format:\n\n" .. json.encode(cityOnSettledTable))
 	table.insert(gKebnoaLoggerTable.cityOnSettledLog, cityOnSettledTable)
-
-	---- time this!!!
-
---	GameConfiguration.SetValue(gKebnoaLoggerTableAsJsonSlotName, json.encode(gKebnoaLoggerTable))
---	local t = Timer:new()
---	log:Debug(string.format("CityOnSettled took %s seconds", t:stop()))
 end
 
 function RecordMetrics()
@@ -101,22 +72,6 @@ function RecordMetrics()
 		print(string.format("Turn (%s), no longer capturing data, extract recorded data!"))
 		return 
 	end
-
---	if currentTurn == gStopRecordingCitySettledAtTurn then
---		log:Debug(string.format("Current Turn: %s and Stop Recording City Settled Turn: %s", currentTurn, gStopRecordingCitySettledAtTurn))
---		local lastCitySettledOnTurn = 0
---		for i, v in ipairs(gCitiesBeingTracked) do
---			if v > lastCitySettledOnTurn then lastCitySettledOnTurn = v end
---		end
---	  -- set the stop recording value to 50 more than last turn settled + 1 to cater for capture at start of turn
---		gStopRecordingCityPerTurnAtTurn = lastCitySettledOnTurn + gTurnsToCaptureDataFor + 1
---	end
-
---	-- No need to record anything here afer 55 or so turns
---		if atEndOfTurn > gStopRecordingCityPerTurnAtTurn then
---			print(json.encode(gKebnoaLoggerTable))
---			return
---		end
 
 	-- The Events.TurnBegin first fires at start of Turn 2 it seems ...
 	-- Capture the game configuration once
@@ -154,27 +109,11 @@ function RecordMetrics()
 			end
 		end
   end
---	log:Debug("CitiesPerTurn Table in JSON format:\n\n" .. json.encode(cityPerTurnLogTableEntry))
---	table.insert(gKebnoaLoggerTable.cityPerTurnLog, cityPerTurnLogTableEntry)
-
---	GameConfiguration.SetValue(gKebnoaLoggerTableAsJsonSlotName, json.encode(gKebnoaLoggerTable))
-
---	local t = Timer:new()
---	kebnoaLoggerJson = json.encode(gKebnoaLoggerTable)
---	log:Debug(string.format("Encoding KebnoaLogger Table in JSON format took %s seconds...", t:stop()))
---	log:Debug("KebnoaLogger Table in JSON format:\n\n" .. kebnoaLoggerJson)
 end
 
 -- All set-up, trigger mod loaded, initialise database if necessary.
 function OnModLoaded()
 	log:Trace("OnModLoaded called")
---	if (InitDatabase() ~= true) then
---		log:Error("Unable to initialise database, aborting...")
---		return nil
---	else
---		log:Trace("Successfully loaded all code and passed pre-flight checks. Hook up all the events")
---		Events.NewGameTurn.Add(CaptureMetrics)
---	end
 
   Events.TurnBegin.Add(RecordMetrics)
   Events.CityInitialized.Add(RecordCitySettled)

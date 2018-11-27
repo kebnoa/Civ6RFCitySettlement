@@ -1,7 +1,7 @@
 -- KebnoaTimer
 -- Author: kebnoa
 -- DateCreated: 11/20/2018 4:16:23 PM
--- A lua time class.
+-- A lua timer class.
 --------------------------------------------------------------
 
 log:Trace("Kebnoa's timer code load started")

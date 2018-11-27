@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<PanelData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Generate Popups</Name>
+  <App>Civ6</App>
+  <EnterAction />
+  <ExitAction />
+  <CompatibleStates>
+    <string>KebnoaDialog</string>
+  </CompatibleStates>
+  <LoadStates />
+  <Actions>
+    <ActionData>
+      <Name>Default OnPopupOpen()</Name>
+      <Action>OnPopupOpen()</Action>
+      <Location>
+        <X>30</X>
+        <Y>52</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Custom Popup 01</Name>
+      <Action>local o = {
+	{Type="Title", Content="KebnoaLogger results"},
+	{Type="Text", Content="Eventually a long JSON string..."},
+	{Type="Text", Content="2 strings?"},
+	{Type="Button", Content=Locale.Lookup("LOC_OK"), CommandString=PopupDialog.COMMAND_DEFAULT}
+}
+
+OnPopupOpen("KebnoaLogger", o)</Action>
+      <Location>
+        <X>30</X>
+        <Y>89</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Custom Popup 02</Name>
+      <Action>local o = {
+	{Type="Title", Content="KebnoaLogger results"},
+	{Type="Text", Content="Eventually a long JSON string..."},
+	{Type="EditBox", Content="EditBox worked!?"},
+	{Type="Button", Content=Locale.Lookup("LOC_OK"), CommandString=PopupDialog.COMMAND_DEFAULT}
+}
+
+OnPopupOpen("KebnoaLogger", o)</Action>
+      <Location>
+        <X>30</X>
+        <Y>127</Y>
+      </Location>
+    </ActionData>
+    <ActionData>
+      <Name>Default OnPopupOpen()</Name>
+      <Action>OnPopupOpen()</Action>
+      <Location>
+        <X>230</X>
+        <Y>55</Y>
+      </Location>
+    </ActionData>
+  </Actions>
+  <StringControls />
+  <IntegerControls />
+  <FloatControls />
+  <BooleanControls />
+  <TableViews />
+  <DataViews />
+  <StatTrackers />
+  <SelectionLists />
+  <MultiselectLists />
+</PanelData>
