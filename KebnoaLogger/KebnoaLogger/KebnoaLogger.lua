@@ -22,10 +22,9 @@ log:Trace("Kebnoa's common code loaded")
 -- Need to work on somehow saving the state, 
 -- but as I am only recording first 54 or so turns it isn't critical
 gKebnoaLoggerTable = gKebnoaLoggerTable or {
-	jsonFormatVersion = 2,
-	date = os.date("%Y%m%d"),
+	jsonSchemaVersion = 3,
 	gameConfig = {},
-	cityOnSettledLog = {},
+	citySettledLog = {},
 	cityPerTurnLog = {}
 }
 
@@ -48,20 +47,21 @@ function RecordCitySettled(playerId, cityId, x, y)
 	-- Track when cities settled so we know when to stop tracking and which to exclude...
 	gCitiesBeingTracked[cityName] = currentTurn
 
-	local cityOnSettledTable = {
+	local citySettledTable = {
 		turn      = currentTurn,
 		cityName  = cityName,
 		ownerName = L(PlayerConfigurations[playerId]:GetLeaderName()),
+		ownerCiv  = L(PlayerConfigurations[playerId]:GetCivilizationShortDescription()),
 		plots     = {},
 	}
 
 	for x, y, ring in PlotCoordinatesInRangeOf(x, y, 2) do
 		if x == nil or y == nil or ring == nil then log:Error("Missing plot coordinates after call to PlotCoordinatesInRangeOf()") return end
-			table.insert(cityOnSettledTable.plots, PlotInfoAt(x, y, ring))
+			table.insert(citySettledTable.plots, PlotInfoAt(x, y, ring))
 	end
 
-	log:Debug("CityOnSettled Table in JSON format:\n\n" .. json.encode(cityOnSettledTable))
-	table.insert(gKebnoaLoggerTable.cityOnSettledLog, cityOnSettledTable)
+	log:Debug("CitySettled Table in JSON format:\n\n" .. json.encode(citySettledTable))
+	table.insert(gKebnoaLoggerTable.citySettledLog, citySettledTable)
 end
 
 function RecordMetrics()

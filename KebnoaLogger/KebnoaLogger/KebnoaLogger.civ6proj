@@ -5,11 +5,11 @@
     <Name>Kebnoa Logger</Name>
     <Guid>02bf7815-7d90-49d3-a9cf-a50c66106701</Guid>
     <ProjectGuid>c26c9aa5-df25-435a-a487-5b8c76d1a393</ProjectGuid>
-    <ModVersion>1</ModVersion>
-    <Teaser>Trying to get this to load in UI context!</Teaser>
-    <Description>Trying to get this to load in UI context!</Description>
+    <ModVersion>3</ModVersion>
+    <Teaser>Track basic city information</Teaser>
+    <Description>Capture plot/tile information when a city is settled as well as the per turn measurements as the city grows. The aim is to try and predict good vs bad cities based on this limited information.</Description>
     <Authors>kebnoa</Authors>
-    <SpecialThanks>All and sundry</SpecialThanks>
+    <SpecialThanks>Gedemon, LeeS, and Onni for Civfantics forums. Thalassicis and David Kolf.</SpecialThanks>
     <AffectsSavedGames>false</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>false</SupportsMultiplayer>
@@ -17,6 +17,8 @@
     <AssemblyName>KebnoaLogger</AssemblyName>
     <RootNamespace>KebnoaLogger</RootNamespace>
     <InGameActionData><![CDATA[<InGameActions><AddUserInterfaces id="KebnoaLogger"><Properties><Context>InGame</Context></Properties><File>KebnoaLogger.xml</File></AddUserInterfaces><ImportFiles id="KebnoaLoggerFiles"><Properties><Context>InGame</Context></Properties><File>Lua/LuaLogger.lua</File><File>Lua/dkjson.lua</File><File>Lua/KebnoaCommon.lua</File><File>Lua/KebnoaTimer.lua</File><File>KebnoaLogger.lua</File><File>KebnoaLogger.xml</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <Homepage>
+    </Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>

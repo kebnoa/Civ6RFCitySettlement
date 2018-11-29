@@ -121,34 +121,39 @@ function PlotCoordinatesInRangeOf (x, y, r)
 end
 
 -- Function that retrieves the relevant Game Configuration data.
--- Returns a table. Includes a sub table of all the Mojor and Minor players.
+-- Returns a table. Includes a sub table of all the Major and Minor players.
 function GetGameConfigInfo()
 	log:Trace("GetGameConfigInfo called")
 	local playerId = Game.GetLocalPlayer()
 	local player = Players[playerId]
 	local playerConfig = PlayerConfigurations[playerId]
+	local query = "SELECT Name, Description FROM Rulesets WHERE RulesetType = ? LIMIT 1"
+  local rulesetTable = DB.ConfigurationQuery(query, GameConfiguration:GetRuleSet())
 
 	gameConfigTable = {
-		leader = L(playerConfig:GetLeaderName()),
-		ruleSet = GameConfiguration.GetRuleSet(),
+	  date = os.date("%Y%m%d"),
+		leaderName = L(playerConfig:GetLeaderName()),
+		leaderCiv = L(playerConfig:GetCivilizationShortDescription()),
+		ruleSet = L(rulesetTable[1].Name),
 		difficulty = L(GameInfo.Difficulties[playerConfig:GetHandicapTypeID()].Name),
 		startEra = L(GameInfo.Eras[GameConfiguration.GetStartEra()].Name),
 		gameSpeed = L(GameInfo.GameSpeeds[GameConfiguration.GetGameSpeedType()].Name),
-		mapType = "ToDo",
 		mapSize = L(GameInfo.Maps[Map.GetMapSize()].Name),
-		players = {}
+		leaders = {}
 	}
 
-  local players = Game.GetPlayers()
-  for k, player in pairs(players) do
+  local leaders = Game.GetPlayers()
+  for k, player in pairs(leaders) do
 		local playerId = player:GetID()
 		local playerName = L(PlayerConfigurations[playerId]:GetLeaderName())
 		if playerName ~= 'Free Cities' and playerName ~= 'Barbarians' then 
-			playerTableEntry = {
-				playerName = playerName,
-				playerCiv  = L(PlayerConfigurations[playerId]:GetCivilizationShortDescription())
+			leaderTableEntry = {
+				leaderName = playerName,
+				leaderCiv  = L(PlayerConfigurations[playerId]:GetCivilizationShortDescription()),
+				isHuman = player:IsHuman(),
+				isMajor = player:IsMajor(),
 			}
-			table.insert(gameConfigTable.players, playerTableEntry)
+			table.insert(gameConfigTable.leaders, leaderTableEntry)
 		end
 	end
 
@@ -168,6 +173,7 @@ function GetCityInfo(playerId, city)
 		turn              = atEndOfTurn,
 		cityName          = L(city:GetName()),
 		ownerName         = L(PlayerConfigurations[playerId]:GetLeaderName()),
+		ownerCiv					= L(PlayerConfigurations[playerId]:GetCivilizationShortDescription()),
 		foodPerTurn       = D2(city:GetYield(YieldTypes.FOOD)),
 		foodToolTip       = TT(city:GetYieldToolTip(YieldTypes.FOOD)),
 		productionPerTurn = D2(city:GetYield(YieldTypes.PRODUCTION)),
