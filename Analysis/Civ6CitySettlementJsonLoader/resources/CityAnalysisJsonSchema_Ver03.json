@@ -1,0 +1,461 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://kebnoa.com/civ6citysettlement_ver03.json",
+  "type": "object",
+  "title": "The Civ 6 City Settlement KebnoaLogger capture Root Schema",
+  "required": [
+    "jsonSchemaVersion",
+    "cityPerTurnLog",
+    "gameConfig",
+    "citySettledLog"
+  ],
+  "properties": {
+    "jsonSchemaVersion": {
+      "$id": "#/properties/jsonSchemaVersion",
+      "type": "integer",
+      "title": "The Jsonschemaversion Schema"
+    },
+    "cityPerTurnLog": {
+      "$id": "#/properties/cityPerTurnLog",
+      "type": "array",
+      "title": "The Cityperturnlog Schema",
+      "minItems":53,
+      "items": {
+        "$id": "#/properties/cityPerTurnLog/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "foodPerTurn",
+          "productionPerTurn",
+          "faithPerTurn",
+          "goldPerTurn",
+          "ownerCiv",
+          "scienceToolTip",
+          "productionToolTip",
+          "ownerName",
+          "turn",
+          "foodToolTip",
+          "population",
+          "culturePerTurn",
+          "sciencePerTurn",
+          "happiness",
+          "housing",
+          "cityName",
+          "amenitiesNeeded",
+          "goldToolTip",
+          "amenities",
+          "faithToolTip",
+          "cultureToolTip"
+        ],
+        "properties": {
+          "foodPerTurn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/foodPerTurn",
+            "type": "string",
+            "title": "The Foodperturn Schema",
+            "pattern": "^[+-]*(\\d*\\.)?\\d+$"
+          },
+          "productionPerTurn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/productionPerTurn",
+            "type": "string",
+            "title": "The Productionperturn Schema",
+            "pattern": "^[+-]*(\\d*\\.)?\\d+$"
+          },
+          "faithPerTurn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/faithPerTurn",
+            "type": "string",
+            "title": "The Faithperturn Schema",
+            "pattern": "^[+-]*(\\d*\\.)?\\d+$"
+          },
+          "goldPerTurn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/goldPerTurn",
+            "type": "string",
+            "title": "The Goldperturn Schema",
+            "pattern": "^[+-]*(\\d*\\.)?\\d+$"
+          },
+          "ownerCiv": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/ownerCiv",
+            "type": "string",
+            "title": "The Ownerciv Schema",
+            "pattern": "^(.*)$"
+          },
+          "scienceToolTip": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/scienceToolTip",
+            "type": "string",
+            "title": "The Sciencetooltip Schema",
+            "pattern": "^(.*)$"
+          },
+          "productionToolTip": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/productionToolTip",
+            "type": "string",
+            "title": "The Productiontooltip Schema",
+            "pattern": "^(.*)$"
+          },
+          "ownerName": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/ownerName",
+            "type": "string",
+            "title": "The Ownername Schema",
+            "pattern": "^(.*)$"
+          },
+          "turn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/turn",
+            "type": "integer",
+            "title": "The Turn Schema"
+          },
+          "foodToolTip": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/foodToolTip",
+            "type": "string",
+            "title": "The Foodtooltip Schema",
+            "pattern": "^(.*)$"
+          },
+          "population": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/population",
+            "type": "integer",
+            "title": "The Population Schema"
+          },
+          "culturePerTurn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/culturePerTurn",
+            "type": "string",
+            "title": "The Cultureperturn Schema",
+            "pattern": "^[+-]*(\\d*\\.)?\\d+$"
+          },
+          "sciencePerTurn": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/sciencePerTurn",
+            "type": "string",
+            "title": "The Scienceperturn Schema",
+            "pattern": "^[+-]*(\\d*\\.)?\\d+$"
+          },
+          "happiness": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/happiness",
+            "type": "string",
+            "title": "The Happiness Schema",
+            "pattern": "^(.*)$"
+          },
+          "housing": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/housing",
+            "type": "integer",
+            "title": "The Housing Schema"
+          },
+          "cityName": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/cityName",
+            "type": "string",
+            "title": "The Cityname Schema",
+            "pattern": "^(.*)$"
+          },
+          "amenitiesNeeded": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/amenitiesNeeded",
+            "type": "integer",
+            "title": "The Amenitiesneeded Schema"
+          },
+          "goldToolTip": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/goldToolTip",
+            "type": "string",
+            "title": "The Goldtooltip Schema",
+            "pattern": "^(.*)$"
+          },
+          "amenities": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/amenities",
+            "type": "integer",
+            "title": "The Amenities Schema"
+          },
+          "faithToolTip": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/faithToolTip",
+            "type": "string",
+            "title": "The Faithtooltip Schema",
+            "pattern": "^(.*)$"
+          },
+          "cultureToolTip": {
+            "$id": "#/properties/cityPerTurnLog/items/properties/cultureToolTip",
+            "type": "string",
+            "title": "The Culturetooltip Schema",
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "gameConfig": {
+      "$id": "#/properties/gameConfig",
+      "type": "array",
+      "title": "The Gameconfig Schema",
+      "items": {
+        "$id": "#/properties/gameConfig/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "difficulty",
+          "leaderCiv",
+          "gameSpeed",
+          "mapSize",
+          "date",
+          "startEra",
+          "leaders",
+          "ruleSet",
+          "leaderName"
+        ],
+        "properties": {
+          "difficulty": {
+            "$id": "#/properties/gameConfig/items/properties/difficulty",
+            "type": "string",
+            "title": "The Difficulty Schema",
+            "pattern": "^(.*)$"
+          },
+          "leaderCiv": {
+            "$id": "#/properties/gameConfig/items/properties/leaderCiv",
+            "type": "string",
+            "title": "The Leaderciv Schema",
+            "pattern": "^(.*)$"
+          },
+          "gameSpeed": {
+            "$id": "#/properties/gameConfig/items/properties/gameSpeed",
+            "type": "string",
+            "title": "The Gamespeed Schema",
+            "pattern": "^(.*)$"
+          },
+          "mapSize": {
+            "$id": "#/properties/gameConfig/items/properties/mapSize",
+            "type": "string",
+            "title": "The Mapsize Schema",
+            "pattern": "^(.*)$"
+          },
+          "date": {
+            "$id": "#/properties/gameConfig/items/properties/date",
+            "type": "string",
+            "title": "The Date Schema",
+            "pattern": "^(.*)$"
+          },
+          "startEra": {
+            "$id": "#/properties/gameConfig/items/properties/startEra",
+            "type": "string",
+            "title": "The Startera Schema",
+            "pattern": "^(.*)$"
+          },
+          "leaders": {
+            "$id": "#/properties/gameConfig/items/properties/leaders",
+            "type": "array",
+            "title": "The Leaders Schema",
+            "items": {
+              "$id": "#/properties/gameConfig/items/properties/leaders/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "leaderCiv",
+                "isHuman",
+                "isMajor",
+                "leaderName"
+              ],
+              "properties": {
+                "leaderCiv": {
+                  "$id": "#/properties/gameConfig/items/properties/leaders/items/properties/leaderCiv",
+                  "type": "string",
+                  "title": "The Leaderciv Schema",
+                  "pattern": "^(.*)$"
+                },
+                "isHuman": {
+                  "$id": "#/properties/gameConfig/items/properties/leaders/items/properties/isHuman",
+                  "type": "boolean",
+                  "title": "The Ishuman Schema"
+                },
+                "isMajor": {
+                  "$id": "#/properties/gameConfig/items/properties/leaders/items/properties/isMajor",
+                  "type": "boolean",
+                  "title": "The Ismajor Schema"
+                },
+                "leaderName": {
+                  "$id": "#/properties/gameConfig/items/properties/leaders/items/properties/leaderName",
+                  "type": "string",
+                  "title": "The Leadername Schema",
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "ruleSet": {
+            "$id": "#/properties/gameConfig/items/properties/ruleSet",
+            "type": "string",
+            "title": "The Ruleset Schema",
+            "pattern": "^(.*)$"
+          },
+          "leaderName": {
+            "$id": "#/properties/gameConfig/items/properties/leaderName",
+            "type": "string",
+            "title": "The Leadername Schema",
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "citySettledLog": {
+      "$id": "#/properties/citySettledLog",
+      "type": "array",
+      "title": "The Citysettledlog Schema",
+      "items": {
+        "$id": "#/properties/citySettledLog/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "cityName",
+          "ownerName",
+          "plots",
+          "ownerCiv",
+          "turn"
+        ],
+        "properties": {
+          "cityName": {
+            "$id": "#/properties/citySettledLog/items/properties/cityName",
+            "type": "string",
+            "title": "The Cityname Schema",
+            "pattern": "^(.*)$"
+          },
+          "ownerName": {
+            "$id": "#/properties/citySettledLog/items/properties/ownerName",
+            "type": "string",
+            "title": "The Ownername Schema",
+            "pattern": "^(.*)$"
+          },
+          "plots": {
+            "$id": "#/properties/citySettledLog/items/properties/plots",
+            "type": "array",
+            "title": "The Plots Schema",
+            "minItems":19,
+            "items": {
+              "$id": "#/properties/citySettledLog/items/properties/plots/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "ownerCity",
+                "isLake",
+                "ownerCiv",
+                "isWater",
+                "district",
+                "workers",
+                "r",
+                "terrain",
+                "index",
+                "y",
+                "feature",
+                "isCity",
+                "hasRiver",
+                "resourceType",
+                "resourceCount",
+                "x",
+                "resource",
+                "ownerName"
+              ],
+              "properties": {
+                "ownerCity": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/ownerCity",
+                  "type": "string",
+                  "title": "The Ownercity Schema",
+                  "pattern": "^(.*)$"
+                },
+                "isLake": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/isLake",
+                  "type": "boolean",
+                  "title": "The Islake Schema"
+                },
+                "ownerCiv": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/ownerCiv",
+                  "type": "string",
+                  "title": "The Ownerciv Schema",
+                  "pattern": "^(.*)$"
+                },
+                "isWater": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/isWater",
+                  "type": "boolean",
+                  "title": "The Iswater Schema"
+                },
+                "district": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/district",
+                  "type": "string",
+                  "title": "The District Schema",
+                  "pattern": "^(.*)$"
+                },
+                "workers": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/workers",
+                  "type": "integer",
+                  "title": "The Workers Schema"
+                },
+                "r": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/r",
+                  "type": "integer",
+                  "title": "The R Schema"
+                },
+                "terrain": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/terrain",
+                  "type": "string",
+                  "title": "The Terrain Schema",
+                  "pattern": "^(.*)$"
+                },
+                "index": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/index",
+                  "type": "integer",
+                  "title": "The Index Schema"
+                },
+                "y": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/y",
+                  "type": "integer",
+                  "title": "The Y Schema"
+                },
+                "feature": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/feature",
+                  "type": "string",
+                  "title": "The Feature Schema",
+                  "pattern": "^(.*)$"
+                },
+                "isCity": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/isCity",
+                  "type": "boolean",
+                  "title": "The Iscity Schema"
+                },
+                "hasRiver": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/hasRiver",
+                  "type": "boolean",
+                  "title": "The Hasriver Schema"
+                },
+                "resourceType": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/resourceType",
+                  "type": "string",
+                  "title": "The Resourcetype Schema",
+                  "pattern": "^(.*)$"
+                },
+                "resourceCount": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/resourceCount",
+                  "type": "integer",
+                  "title": "The Resourcecount Schema"
+                },
+                "x": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/x",
+                  "type": "integer",
+                  "title": "The X Schema"
+                },
+                "resource": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/resource",
+                  "type": "string",
+                  "title": "The Resource Schema",
+                  "pattern": "^(.*)$"
+                },
+                "ownerName": {
+                  "$id": "#/properties/citySettledLog/items/properties/plots/items/properties/ownerName",
+                  "type": "string",
+                  "title": "The Ownername Schema",
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "ownerCiv": {
+            "$id": "#/properties/citySettledLog/items/properties/ownerCiv",
+            "type": "string",
+            "title": "The Ownerciv Schema",
+            "pattern": "^(.*)$"
+          },
+          "turn": {
+            "$id": "#/properties/citySettledLog/items/properties/turn",
+            "type": "integer",
+            "title": "The Turn Schema"
+          }
+        }
+      }
+    }
+  }
+}
