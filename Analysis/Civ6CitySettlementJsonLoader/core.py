@@ -29,7 +29,7 @@ class Loader(object):
   def connectValidationDb(self):
     print("\nConnecting (and initialising) InMemory Database:")
     try:
-      sqlInitFilename = pkg_resources.resource_filename(__name__, 'resources/CityAnalysisDatabaseInitialisation03_data.sql')
+      sqlInitFilename = pkg_resources.resource_filename(__name__, 'resources/CityAnalysisDatabaseInitialisation04_data.sql')
       with open(sqlInitFilename, encoding='utf8') as f:
         sqlInitScript = f.read()
       db = sqlite3.connect(":memory:")
@@ -165,7 +165,7 @@ class Loader(object):
             'isCity': plot['isCity'],
           }
           cityPlotsInfo.append(plotInfo)
-      query = 'INSERT INTO cityPlotsSettled VALUES(:plotId, :ownerCityId, :ring, :terrain, :feature, :resource, :resourceCount, :resourceType, :workers, :district, :hasRiver, :isWater, :isLake, :isCity )'
+      query = 'INSERT INTO cityPlotsSettled VALUES(:plotId, :ownerCityId, :recordedCityId, :ring, :terrain, :feature, :resource, :resourceCount, :resourceType, :workers, :district, :hasRiver, :isWater, :isLake, :isCity )'
       for plotInfo in cityPlotsInfo:
         cur.execute(query, plotInfo)
       print(" - cityPlotsSettled table updated. Added {} plots".format(len(cityPlotsInfo)))
