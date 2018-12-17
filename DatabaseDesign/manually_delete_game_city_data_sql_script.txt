@@ -1,0 +1,33 @@
+select group_concat(cityId, ', ') from gameCity where gameId = 7;
+--gameId 12 cityId: (174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188);
+--gameId  7 cityId: (99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113);
+
+select *
+--delete
+  from cityPlotsSettled
+ where recordedCityId in (99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113);
+
+select *
+--delete
+  from cityPerTurnLog
+ where cityId in (99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113);
+
+select *
+--delete
+  from gameCity
+ where cityId in (99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113);
+
+select *
+--delete
+  from citySettledLog
+ where cityId in (99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113);
+
+select *
+--delete
+  from gameLeader
+ where gameId = 7;
+ 
+select *
+--delete
+  from game
+ where gameId = 7;

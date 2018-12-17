@@ -1,0 +1,1267 @@
+[
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 19.3541317, "cover": 9.21484375, "children": [
+    { "nodeid": 1, "leaf": -0.229510248, "cover": 2.75 },
+    { "nodeid": 2, "leaf": 0.208154365, "cover": 6.46484375 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 3.58227634, "cover": 9.77527809, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 5.92063427, "cover": 5.0669589, "children": [
+      { "nodeid": 3, "leaf": -0.209638253, "cover": 2.46851492 },
+      { "nodeid": 4, "leaf": 0.081200175, "cover": 2.59844398 }
+    ]},
+    { "nodeid": 2, "leaf": 0.101169318, "cover": 4.70831966 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 4.29594135, "cover": 13.4958172, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 8.98149967, "cover": 8.72794437, "children": [
+      { "nodeid": 3, "leaf": -0.130224258, "cover": 3.9663763 },
+      { "nodeid": 4, "leaf": 0.157350704, "cover": 4.76156759 }
+    ]},
+    { "nodeid": 2, "leaf": 0.204471439, "cover": 4.76787281 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 8.99680424, "cover": 7.05887365, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.105250001, "yes": 3, "no": 4, "missing": 3, "gain": 1.39502382, "cover": 4.2053771, "children": [
+      { "nodeid": 3, "leaf": -0.215960607, "cover": 2.19031835 },
+      { "nodeid": 4, "leaf": -0.0308829658, "cover": 2.01505876 }
+    ]},
+    { "nodeid": 2, "leaf": 0.165384173, "cover": 2.85349679 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.3472271, "cover": 11.0939713, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.131600007, "yes": 3, "no": 4, "missing": 3, "gain": 3.53285217, "cover": 7.37618876, "children": [
+      { "nodeid": 3, "leaf": -0.102779351, "cover": 3.98560524 },
+      { "nodeid": 4, "leaf": 0.0899147168, "cover": 3.39058352 }
+    ]},
+    { "nodeid": 2, "leaf": 0.176596716, "cover": 3.7177825 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 9.22796059, "cover": 8.90358353, "children": [
+    { "nodeid": 1, "leaf": 0.174203664, "cover": 3.97396231 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 4.42744827, "cover": 4.92962122, "children": [
+      { "nodeid": 3, "leaf": -0.222653553, "cover": 2.66048574 },
+      { "nodeid": 4, "leaf": 0.0406675264, "cover": 2.26913548 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.55685234, "cover": 13.9982719, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 8.3204422, "cover": 9.08037567, "children": [
+      { "nodeid": 3, "depth": 2, "split": "Grassland", "split_condition": 0.236850008, "yes": 5, "no": 6, "missing": 5, "gain": 3.65469098, "cover": 4.57966661, "children": [
+        { "nodeid": 5, "leaf": -0.208997086, "cover": 2.03156543 },
+        { "nodeid": 6, "leaf": 0.0341464877, "cover": 2.54810143 }
+      ]},
+      { "nodeid": 4, "depth": 2, "split": "Grassland", "split_condition": 0.0789500028, "yes": 7, "no": 8, "missing": 7, "gain": 2.15259933, "cover": 4.50070906, "children": [
+        { "nodeid": 7, "leaf": 0.0387552269, "cover": 2.16353464 },
+        { "nodeid": 8, "leaf": 0.261196762, "cover": 2.33717465 }
+      ]}
+    ]},
+    { "nodeid": 2, "leaf": 0.249751911, "cover": 4.91789579 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.32625389, "cover": 11.2811661, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 11.1029062, "cover": 6.46123266, "children": [
+      { "nodeid": 3, "leaf": -0.231063291, "cover": 2.53954387 },
+      { "nodeid": 4, "leaf": 0.132617116, "cover": 3.92168903 }
+    ]},
+    { "nodeid": 2, "leaf": 0.181273863, "cover": 4.81993294 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.97029495, "cover": 6.59577608, "children": [
+    { "nodeid": 1, "leaf": -0.0959504917, "cover": 2.62496281 },
+    { "nodeid": 2, "leaf": 0.147231922, "cover": 3.97081351 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Desert", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.92453432, "cover": 10.3164682, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 2.20870805, "cover": 6.60574389, "children": [
+      { "nodeid": 3, "leaf": -0.108279034, "cover": 4.40058708 },
+      { "nodeid": 4, "leaf": 0.0592712499, "cover": 2.20515656 }
+    ]},
+    { "nodeid": 2, "leaf": 0.105072752, "cover": 3.71072412 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.46693468, "cover": 10.9353399, "children": [
+    { "nodeid": 1, "leaf": -0.0859822705, "cover": 4.10292387 },
+    { "nodeid": 2, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.131600007, "yes": 3, "no": 4, "missing": 3, "gain": 1.37075901, "cover": 6.83241558, "children": [
+      { "nodeid": 3, "depth": 2, "split": "Wheat", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 0.176541865, "cover": 4.35947704, "children": [
+        { "nodeid": 5, "leaf": 0.0122592747, "cover": 2.32383871 },
+        { "nodeid": 6, "leaf": 0.076251924, "cover": 2.03563833 }
+      ]},
+      { "nodeid": 4, "leaf": 0.200303823, "cover": 2.47293878 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.99822569, "cover": 9.25395679, "children": [
+    { "nodeid": 1, "leaf": -0.176132023, "cover": 3.37033653 },
+    { "nodeid": 2, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 4.26408672, "cover": 5.88362026, "children": [
+      { "nodeid": 3, "leaf": -0.0902484506, "cover": 2.18211389 },
+      { "nodeid": 4, "leaf": 0.14773044, "cover": 3.70150638 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.95139694, "cover": 9.37881756, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.45854402, "cover": 5.91288137, "children": [
+      { "nodeid": 3, "leaf": -0.198099717, "cover": 2.76857162 },
+      { "nodeid": 4, "leaf": -0.00801196974, "cover": 3.14431 }
+    ]},
+    { "nodeid": 2, "leaf": 0.119373895, "cover": 3.46593595 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.12216854, "cover": 11.8300562, "children": [
+    { "nodeid": 1, "leaf": -0.0772293508, "cover": 2.64490962 },
+    { "nodeid": 2, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 3.05423355, "cover": 9.18514633, "children": [
+      { "nodeid": 3, "leaf": 0.0253162403, "cover": 2.97455788 },
+      { "nodeid": 4, "leaf": 0.223358557, "cover": 6.21058846 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.17362547, "cover": 7.91138649, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.8859067, "cover": 5.8406744, "children": [
+      { "nodeid": 3, "leaf": -0.0914410725, "cover": 2.91304064 },
+      { "nodeid": 4, "leaf": 0.0984539688, "cover": 2.92763376 }
+    ]},
+    { "nodeid": 2, "leaf": -0.191585436, "cover": 2.07071185 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.29897976, "cover": 9.47398472, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 9.02913666, "cover": 4.48684931, "children": [
+      { "nodeid": 3, "leaf": 0.144093499, "cover": 2.08231783 },
+      { "nodeid": 4, "leaf": -0.228192925, "cover": 2.40453172 }
+    ]},
+    { "nodeid": 2, "depth": 1, "split": "CoastLake", "split_condition": 0.184200004, "yes": 5, "no": 6, "missing": 5, "gain": 4.99739981, "cover": 4.98713493, "children": [
+      { "nodeid": 5, "leaf": 0.252905816, "cover": 2.52059817 },
+      { "nodeid": 6, "leaf": -0.0276316032, "cover": 2.46653676 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.04624033, "cover": 10.5736952, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 2.05467772, "cover": 6.8694272, "children": [
+      { "nodeid": 3, "leaf": -0.0094756484, "cover": 3.82000923 },
+      { "nodeid": 4, "leaf": -0.172123536, "cover": 3.04941797 }
+    ]},
+    { "nodeid": 2, "leaf": 0.147718996, "cover": 3.70426798 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Desert", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.7838614, "cover": 6.72376108, "children": [
+    { "nodeid": 1, "leaf": -0.07278689, "cover": 4.56356335 },
+    { "nodeid": 2, "leaf": 0.141660109, "cover": 2.16019797 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 15.4898329, "cover": 8.26954269, "children": [
+    { "nodeid": 1, "leaf": -0.157549918, "cover": 3.71474409 },
+    { "nodeid": 2, "depth": 1, "split": "Grassland", "split_condition": 0.447399974, "yes": 3, "no": 4, "missing": 3, "gain": 0.843618393, "cover": 4.55479908, "children": [
+      { "nodeid": 3, "leaf": 0.0957196653, "cover": 2.3093636 },
+      { "nodeid": 4, "leaf": 0.295413405, "cover": 2.24543524 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.39875507, "cover": 9.84208107, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.65717649, "cover": 6.89664555, "children": [
+      { "nodeid": 3, "depth": 2, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 1.41437888, "cover": 4.3043828, "children": [
+        { "nodeid": 5, "leaf": -0.0325284004, "cover": 2.071908 },
+        { "nodeid": 6, "leaf": 0.121103361, "cover": 2.23247504 }
+      ]},
+      { "nodeid": 4, "leaf": 0.218147367, "cover": 2.59226274 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0913539454, "cover": 2.94543505 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.71894169, "cover": 7.75333548, "children": [
+    { "nodeid": 1, "leaf": 0.056071505, "cover": 4.4616642 },
+    { "nodeid": 2, "leaf": -0.139663354, "cover": 3.29167128 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 12.8409138, "cover": 8.80241203, "children": [
+    { "nodeid": 1, "leaf": -0.221892461, "cover": 3.26313829 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 4.84549618, "cover": 5.53927374, "children": [
+      { "nodeid": 3, "leaf": 0.222535849, "cover": 3.39617229 },
+      { "nodeid": 4, "leaf": -0.0465402342, "cover": 2.14310122 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Rice", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 21.5619373, "cover": 7.70955992, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.884925842, "cover": 4.58702135, "children": [
+      { "nodeid": 3, "leaf": -0.176391259, "cover": 2.19395208 },
+      { "nodeid": 4, "leaf": -0.0326063447, "cover": 2.39306927 }
+    ]},
+    { "nodeid": 2, "leaf": 0.354403079, "cover": 3.12253857 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.90417218, "cover": 8.20044327, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.0253536701, "cover": 6.01486063, "children": [
+      { "nodeid": 3, "leaf": 0.138405889, "cover": 3.05243134 },
+      { "nodeid": 4, "leaf": 0.0608258843, "cover": 2.96242952 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0703108832, "cover": 2.18558264 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Stone", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.07515526, "cover": 7.3772316, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 5.72243071, "cover": 4.73062515, "children": [
+      { "nodeid": 3, "leaf": -0.159350723, "cover": 2.33734846 },
+      { "nodeid": 4, "leaf": 0.129465565, "cover": 2.39327693 }
+    ]},
+    { "nodeid": 2, "leaf": 0.200930238, "cover": 2.64660621 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 14.8051701, "cover": 10.783432, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.0526500009, "yes": 3, "no": 4, "missing": 3, "gain": 1.40667248, "cover": 7.28936052, "children": [
+      { "nodeid": 3, "leaf": 0.219948158, "cover": 4.6767025 },
+      { "nodeid": 4, "leaf": 0.0531783476, "cover": 2.61265802 }
+    ]},
+    { "nodeid": 2, "leaf": -0.180194765, "cover": 3.49407172 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.236850008, "yes": 1, "no": 2, "missing": 1, "gain": 9.63050842, "cover": 9.03399849, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 2.58074164, "cover": 6.50923204, "children": [
+      { "nodeid": 3, "leaf": -0.160000443, "cover": 2.20384789 },
+      { "nodeid": 4, "depth": 2, "split": "OtherBonus", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 1.23911726, "cover": 4.30538416, "children": [
+        { "nodeid": 5, "leaf": -0.0544875264, "cover": 2.03570056 },
+        { "nodeid": 6, "leaf": 0.0852221623, "cover": 2.26968336 }
+      ]}
+    ]},
+    { "nodeid": 2, "leaf": 0.262004793, "cover": 2.52476692 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.39370441, "cover": 6.55374622, "children": [
+    { "nodeid": 1, "leaf": -0.0903391838, "cover": 2.92958808 },
+    { "nodeid": 2, "leaf": 0.107826501, "cover": 3.62415814 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.41486788, "cover": 8.2351656, "children": [
+    { "nodeid": 1, "leaf": -0.170335606, "cover": 2.09765697 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.445201039, "cover": 6.13750935, "children": [
+      { "nodeid": 3, "leaf": 0.00926803425, "cover": 3.36568666 },
+      { "nodeid": 4, "leaf": 0.0907113701, "cover": 2.77182245 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "DesertHills", "split_condition": 0.105250001, "yes": 1, "no": 2, "missing": 1, "gain": 3.47890401, "cover": 11.2574968, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 2.5868113, "cover": 9.00079441, "children": [
+      { "nodeid": 3, "depth": 2, "split": "Grassland", "split_condition": 0.236850008, "yes": 5, "no": 6, "missing": 5, "gain": 4.65882444, "cover": 6.79096317, "children": [
+        { "nodeid": 5, "leaf": -0.170232624, "cover": 2.36031508 },
+        { "nodeid": 6, "depth": 3, "split": "Stone", "split_condition": 0.0263, "yes": 7, "no": 8, "missing": 7, "gain": 1.64245296, "cover": 4.43064833, "children": [
+          { "nodeid": 7, "leaf": -0.0333580784, "cover": 2.00187778 },
+          { "nodeid": 8, "leaf": 0.132024944, "cover": 2.42877054 }
+        ]}
+      ]},
+      { "nodeid": 4, "leaf": 0.139376253, "cover": 2.20983124 }
+    ]},
+    { "nodeid": 2, "leaf": 0.214696109, "cover": 2.25670218 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.57036972, "cover": 7.08523321, "children": [
+    { "nodeid": 1, "leaf": -0.0762448534, "cover": 3.75456619 },
+    { "nodeid": 2, "leaf": 0.213029116, "cover": 3.33066702 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.394749999, "yes": 1, "no": 2, "missing": 1, "gain": 5.82497311, "cover": 9.78650856, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Wheat", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.00440544635, "cover": 4.43621349, "children": [
+      { "nodeid": 3, "leaf": -0.0241567381, "cover": 2.23055601 },
+      { "nodeid": 4, "leaf": -0.00806889497, "cover": 2.20565748 }
+    ]},
+    { "nodeid": 2, "leaf": 0.210642204, "cover": 5.35029459 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.58707547, "cover": 8.67456245, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 4.43762207, "cover": 4.86241627, "children": [
+      { "nodeid": 3, "leaf": 0.123622961, "cover": 2.5738132 },
+      { "nodeid": 4, "leaf": -0.128279522, "cover": 2.28860307 }
+    ]},
+    { "nodeid": 2, "leaf": 0.165963247, "cover": 3.81214571 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.82299471, "cover": 10.7180805, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 6.92933559, "cover": 7.01780653, "children": [
+      { "nodeid": 3, "leaf": -0.0256738737, "cover": 2.32426572 },
+      { "nodeid": 4, "leaf": 0.284804016, "cover": 4.69354057 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0535944961, "cover": 3.70027423 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.157900006, "yes": 1, "no": 2, "missing": 1, "gain": 2.04379129, "cover": 7.74579287, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.0526500009, "yes": 3, "no": 4, "missing": 3, "gain": 0.522807121, "cover": 4.82652521, "children": [
+      { "nodeid": 3, "leaf": 0.0485044122, "cover": 2.70893693 },
+      { "nodeid": 4, "leaf": 0.171550736, "cover": 2.11758804 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0295038689, "cover": 2.91926765 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.47940159, "cover": 10.0030537, "children": [
+    { "nodeid": 1, "leaf": -0.015118327, "cover": 2.54667258 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.108588219, "cover": 7.45638084, "children": [
+      { "nodeid": 3, "leaf": 0.121907674, "cover": 4.95138407 },
+      { "nodeid": 4, "leaf": 0.246527433, "cover": 2.50499678 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.49005318, "cover": 9.49499893, "children": [
+    { "nodeid": 1, "leaf": -0.0491866544, "cover": 2.43211865 },
+    { "nodeid": 2, "depth": 1, "split": "Plains", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 1.23716927, "cover": 7.06288052, "children": [
+      { "nodeid": 3, "leaf": 0.0721509978, "cover": 4.47341347 },
+      { "nodeid": 4, "leaf": 0.223965257, "cover": 2.58946705 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Cattle", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.43974972, "cover": 6.71769667, "children": [
+    { "nodeid": 1, "leaf": -0.0658447295, "cover": 3.93507695 },
+    { "nodeid": 2, "leaf": 0.160709068, "cover": 2.78261971 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.87282658, "cover": 10.7979126, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 4.52708006, "cover": 7.23154402, "children": [
+      { "nodeid": 3, "depth": 2, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 5, "no": 6, "missing": 5, "gain": 3.82501411, "cover": 4.74226809, "children": [
+        { "nodeid": 5, "leaf": -0.05765808, "cover": 2.66984534 },
+        { "nodeid": 6, "leaf": 0.182979956, "cover": 2.07242298 }
+      ]},
+      { "nodeid": 4, "leaf": -0.165636644, "cover": 2.48927569 }
+    ]},
+    { "nodeid": 2, "leaf": 0.19591473, "cover": 3.56636882 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.69927073, "cover": 6.12400579, "children": [
+    { "nodeid": 1, "leaf": -0.206016272, "cover": 4.0371666 },
+    { "nodeid": 2, "leaf": 0.00383220403, "cover": 2.08683944 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.00143552, "cover": 6.38403702, "children": [
+    { "nodeid": 1, "leaf": -0.153851792, "cover": 3.63630891 },
+    { "nodeid": 2, "leaf": 0.0109796021, "cover": 2.74772811 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.95699263, "cover": 6.78424215, "children": [
+    { "nodeid": 1, "leaf": -0.0324947424, "cover": 4.12624693 },
+    { "nodeid": 2, "leaf": 0.154616177, "cover": 2.65799546 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00749976654, "cover": 4.06375694 },
+  { "nodeid": 0, "depth": 0, "split": "Horses", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.95762444, "cover": 12.8335333, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.73857975, "cover": 10.6383781, "children": [
+      { "nodeid": 3, "leaf": 0.210980147, "cover": 5.55073309 },
+      { "nodeid": 4, "depth": 2, "split": "Rice", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 2.7192359, "cover": 5.08764458, "children": [
+        { "nodeid": 5, "leaf": -0.0241892412, "cover": 2.47847366 },
+        { "nodeid": 6, "leaf": 0.180233777, "cover": 2.60917091 }
+      ]}
+    ]},
+    { "nodeid": 2, "leaf": -0.0216743704, "cover": 2.19515586 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.28258848, "cover": 11.1611986, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.105250001, "yes": 3, "no": 4, "missing": 3, "gain": 4.13387871, "cover": 6.00148201, "children": [
+      { "nodeid": 3, "leaf": -0.124451891, "cover": 2.88770723 },
+      { "nodeid": 4, "leaf": 0.100688405, "cover": 3.11377454 }
+    ]},
+    { "nodeid": 2, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 0.51611805, "cover": 5.15971661, "children": [
+      { "nodeid": 5, "leaf": 0.088330999, "cover": 2.17557907 },
+      { "nodeid": 6, "leaf": 0.259602159, "cover": 2.98413754 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.95428205, "cover": 5.6482954, "children": [
+    { "nodeid": 1, "leaf": -0.208269209, "cover": 2.12299752 },
+    { "nodeid": 2, "leaf": 0.0270404536, "cover": 3.52529812 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.14020967, "cover": 5.46672249, "children": [
+    { "nodeid": 1, "leaf": 0.110369831, "cover": 2.3005507 },
+    { "nodeid": 2, "leaf": -0.0939905867, "cover": 3.16617155 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Stone", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.52062273, "cover": 9.12124062, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 1.41615915, "cover": 4.04035568, "children": [
+      { "nodeid": 3, "leaf": -0.176057681, "cover": 2.00710535 },
+      { "nodeid": 4, "leaf": -0.00462635094, "cover": 2.03325057 }
+    ]},
+    { "nodeid": 2, "leaf": 0.151569054, "cover": 5.08088446 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.21055001, "yes": 1, "no": 2, "missing": 1, "gain": 4.63476086, "cover": 9.21394348, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 6.48407507, "cover": 6.87122393, "children": [
+      { "nodeid": 3, "leaf": -0.13774167, "cover": 2.99349809 },
+      { "nodeid": 4, "leaf": 0.131263286, "cover": 3.87772584 }
+    ]},
+    { "nodeid": 2, "leaf": 0.23792927, "cover": 2.34271932 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.236850008, "yes": 1, "no": 2, "missing": 1, "gain": 2.18357801, "cover": 7.02133179, "children": [
+    { "nodeid": 1, "leaf": 0.0712251663, "cover": 4.12410116 },
+    { "nodeid": 2, "leaf": -0.0842207, "cover": 2.8972311 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 4.35038519, "cover": 9.89836979, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 3.75146246, "cover": 7.29586267, "children": [
+      { "nodeid": 3, "leaf": -0.112223983, "cover": 3.36439252 },
+      { "nodeid": 4, "leaf": 0.0870169252, "cover": 3.93147016 }
+    ]},
+    { "nodeid": 2, "leaf": 0.201916397, "cover": 2.60250711 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0526500009, "yes": 1, "no": 2, "missing": 1, "gain": 1.14040244, "cover": 7.68132067, "children": [
+    { "nodeid": 1, "leaf": -0.0756450295, "cover": 2.60267043 },
+    { "nodeid": 2, "depth": 1, "split": "Plains", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.684638917, "cover": 5.07865047, "children": [
+      { "nodeid": 3, "leaf": -0.0132204359, "cover": 3.02492332 },
+      { "nodeid": 4, "leaf": 0.0881697387, "cover": 2.05372715 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 7.12115049, "cover": 6.32759619, "children": [
+    { "nodeid": 1, "leaf": -0.194749281, "cover": 3.91356015 },
+    { "nodeid": 2, "leaf": 0.104414336, "cover": 2.41403627 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.49951971, "cover": 8.97872448, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.131600007, "yes": 3, "no": 4, "missing": 3, "gain": 0.562654138, "cover": 6.27110434, "children": [
+      { "nodeid": 3, "leaf": -0.0103423446, "cover": 3.05287695 },
+      { "nodeid": 4, "leaf": 0.0749239624, "cover": 3.21822715 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0846079737, "cover": 2.70762062 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.20569587, "cover": 5.20931053, "children": [
+    { "nodeid": 1, "leaf": -0.0835023299, "cover": 2.63752031 },
+    { "nodeid": 2, "leaf": 0.0896262527, "cover": 2.57179046 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.86339426, "cover": 7.77204227, "children": [
+    { "nodeid": 1, "leaf": -0.0657185167, "cover": 3.99030232 },
+    { "nodeid": 2, "leaf": 0.157047942, "cover": 3.78174019 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 4.58647156, "cover": 6.03698874, "children": [
+    { "nodeid": 1, "leaf": -0.0336382724, "cover": 3.3589561 },
+    { "nodeid": 2, "leaf": 0.210921317, "cover": 2.67803264 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 10.1036768, "cover": 5.85152435, "children": [
+    { "nodeid": 1, "leaf": -0.188790783, "cover": 2.86563897 },
+    { "nodeid": 2, "leaf": 0.166338995, "cover": 2.98588514 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 15.8851433, "cover": 8.12906265, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.651439667, "cover": 5.70826244, "children": [
+      { "nodeid": 3, "leaf": 0.0475011207, "cover": 2.126302 },
+      { "nodeid": 4, "leaf": 0.185027644, "cover": 3.58196044 }
+    ]},
+    { "nodeid": 2, "leaf": -0.265890121, "cover": 2.42079997 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.95927715, "cover": 8.21091461, "children": [
+    { "nodeid": 1, "leaf": -0.11071384, "cover": 3.13519049 },
+    { "nodeid": 2, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 1.77950001, "cover": 5.07572412, "children": [
+      { "nodeid": 3, "leaf": 0.0374821164, "cover": 2.54087353 },
+      { "nodeid": 4, "leaf": 0.227737039, "cover": 2.53485036 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 12.2669697, "cover": 8.7855711, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 7.3431859, "cover": 6.56230259, "children": [
+      { "nodeid": 3, "depth": 2, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 5, "no": 6, "missing": 5, "gain": 0.0193662643, "cover": 4.19718409, "children": [
+        { "nodeid": 5, "leaf": 0.109399475, "cover": 2.03082156 },
+        { "nodeid": 6, "leaf": 0.285004616, "cover": 2.16636252 }
+      ]},
+      { "nodeid": 4, "leaf": -0.0715799928, "cover": 2.3651185 }
+    ]},
+    { "nodeid": 2, "leaf": -0.233580142, "cover": 2.22326851 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.78439415, "cover": 8.40680885, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.0430455208, "cover": 4.4818697, "children": [
+      { "nodeid": 3, "leaf": 0.0540999472, "cover": 2.22593355 },
+      { "nodeid": 4, "leaf": 0.141694099, "cover": 2.25593615 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0182330739, "cover": 3.92493939 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 2.15160418, "cover": 7.49092579, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.290442228, "cover": 5.2449708, "children": [
+      { "nodeid": 3, "leaf": 0.00147589191, "cover": 2.19884062 },
+      { "nodeid": 4, "leaf": -0.068524614, "cover": 3.04613042 }
+    ]},
+    { "nodeid": 2, "leaf": 0.113591209, "cover": 2.24595499 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.51732206, "cover": 5.73658609, "children": [
+    { "nodeid": 1, "leaf": -0.132979318, "cover": 2.89572144 },
+    { "nodeid": 2, "leaf": 0.131326541, "cover": 2.8408649 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 5.22662592, "cover": 8.85844517, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 2.96640682, "cover": 6.34002495, "children": [
+      { "nodeid": 3, "leaf": -0.143817425, "cover": 3.19859791 },
+      { "nodeid": 4, "leaf": 0.046364937, "cover": 3.14142704 }
+    ]},
+    { "nodeid": 2, "leaf": 0.1762373, "cover": 2.51842046 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.10442591, "cover": 6.71712971, "children": [
+    { "nodeid": 1, "leaf": -0.0519315153, "cover": 4.13037682 },
+    { "nodeid": 2, "leaf": 0.168089464, "cover": 2.58675265 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.394749999, "yes": 1, "no": 2, "missing": 1, "gain": 6.47945881, "cover": 7.87598228, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 3.65890813, "cover": 5.61808968, "children": [
+      { "nodeid": 3, "leaf": -0.116384231, "cover": 3.38085389 },
+      { "nodeid": 4, "leaf": 0.103733152, "cover": 2.23723602 }
+    ]},
+    { "nodeid": 2, "leaf": 0.247117028, "cover": 2.25789261 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.51416492, "cover": 6.95352697, "children": [
+    { "nodeid": 1, "leaf": -0.133469865, "cover": 3.9086411 },
+    { "nodeid": 2, "leaf": 0.154594198, "cover": 3.04488611 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Horses", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 10.7689247, "cover": 7.83070612, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.39472342, "cover": 5.12874889, "children": [
+      { "nodeid": 3, "leaf": -0.230696902, "cover": 2.12156868 },
+      { "nodeid": 4, "leaf": -0.0252297744, "cover": 3.00717998 }
+    ]},
+    { "nodeid": 2, "leaf": 0.204058617, "cover": 2.70195723 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.88411093, "cover": 5.33264875, "children": [
+    { "nodeid": 1, "leaf": 0.10898596, "cover": 3.09607434 },
+    { "nodeid": 2, "leaf": -0.120458364, "cover": 2.23657441 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.69627333, "cover": 7.27433205, "children": [
+    { "nodeid": 1, "leaf": 0.123036943, "cover": 4.30835819 },
+    { "nodeid": 2, "leaf": -0.0509013459, "cover": 2.96597362 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.21020317, "cover": 10.1161604, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Stone", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.36353207, "cover": 6.74220371, "children": [
+      { "nodeid": 3, "leaf": 0.236502618, "cover": 3.28328681 },
+      { "nodeid": 4, "leaf": 0.0713705122, "cover": 3.4589169 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0298375767, "cover": 3.37395692 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.85885382, "cover": 7.83879948, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 4.65873194, "cover": 5.70312643, "children": [
+      { "nodeid": 3, "leaf": -0.183769941, "cover": 2.21928501 },
+      { "nodeid": 4, "leaf": 0.0648543462, "cover": 3.48384118 }
+    ]},
+    { "nodeid": 2, "leaf": 0.215730801, "cover": 2.13567328 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.270632267, "cover": 4.28804636, "children": [
+    { "nodeid": 1, "leaf": -0.051653035, "cover": 2.01956201 },
+    { "nodeid": 2, "leaf": -0.169450447, "cover": 2.26848435 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 7.43872261, "cover": 7.5533061, "children": [
+    { "nodeid": 1, "leaf": -0.0495085567, "cover": 3.77072477 },
+    { "nodeid": 2, "leaf": 0.233782753, "cover": 3.78258133 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Cattle", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.5280323, "cover": 9.1965971, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsWoods", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 3.17495489, "cover": 6.8000741, "children": [
+      { "nodeid": 3, "leaf": -0.120104522, "cover": 2.30665684 },
+      { "nodeid": 4, "leaf": 0.07397075, "cover": 4.49341726 }
+    ]},
+    { "nodeid": 2, "leaf": 0.267008781, "cover": 2.39652276 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 5.37532139, "cover": 6.52465439, "children": [
+    { "nodeid": 1, "leaf": -0.0208522659, "cover": 2.39908218 },
+    { "nodeid": 2, "leaf": 0.254925907, "cover": 4.1255722 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.29865503, "cover": 6.60059834, "children": [
+    { "nodeid": 1, "leaf": -0.0755562559, "cover": 4.26781988 },
+    { "nodeid": 2, "leaf": 0.200310737, "cover": 2.33277822 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.718297, "cover": 9.06540966, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsWoods", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 2.21383095, "cover": 6.8569355, "children": [
+      { "nodeid": 3, "leaf": 0.222553372, "cover": 4.69383001 },
+      { "nodeid": 4, "leaf": 0.0240349639, "cover": 2.16310549 }
+    ]},
+    { "nodeid": 2, "leaf": -0.105088964, "cover": 2.20847392 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.504364967, "cover": 5.2212553, "children": [
+    { "nodeid": 1, "leaf": 0.199358284, "cover": 2.00402665 },
+    { "nodeid": 2, "leaf": 0.068736814, "cover": 3.21722865 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 14.4772453, "cover": 6.11945772, "children": [
+    { "nodeid": 1, "leaf": -0.244075418, "cover": 3.73690534 },
+    { "nodeid": 2, "leaf": 0.182752669, "cover": 2.38255262 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.44547462, "cover": 5.18962574, "children": [
+    { "nodeid": 1, "leaf": 0.143871725, "cover": 3.05036902 },
+    { "nodeid": 2, "leaf": -0.105827495, "cover": 2.13925648 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Desert", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.38237715, "cover": 9.29370785, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 3.19001269, "cover": 5.94985914, "children": [
+      { "nodeid": 3, "leaf": -0.0749988556, "cover": 3.08053923 },
+      { "nodeid": 4, "leaf": 0.124015935, "cover": 2.86932015 }
+    ]},
+    { "nodeid": 2, "leaf": 0.279289246, "cover": 3.34384871 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.68103766, "cover": 7.50683594, "children": [
+    { "nodeid": 1, "leaf": -0.100483999, "cover": 2.73543048 },
+    { "nodeid": 2, "depth": 1, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 1.89361537, "cover": 4.7714057, "children": [
+      { "nodeid": 3, "leaf": 0.143773556, "cover": 2.46413445 },
+      { "nodeid": 4, "leaf": -0.0290029421, "cover": 2.307271 }
+    ]}
+  ]},
+  { "nodeid": 0, "leaf": 0.167105511, "cover": 7.82753229 },
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 13.6693964, "cover": 8.74919224, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.4122951, "cover": 4.27105427, "children": [
+      { "nodeid": 3, "leaf": -0.171691254, "cover": 2.2123909 },
+      { "nodeid": 4, "leaf": -0.00377899129, "cover": 2.05866361 }
+    ]},
+    { "nodeid": 2, "depth": 1, "split": "Wheat", "split_condition": 0.0789500028, "yes": 5, "no": 6, "missing": 5, "gain": 1.90999889, "cover": 4.47813797, "children": [
+      { "nodeid": 5, "leaf": 0.0933625102, "cover": 2.40841913 },
+      { "nodeid": 6, "leaf": 0.341403276, "cover": 2.06971884 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.782574177, "cover": 7.94596672, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.10855484, "cover": 5.09732056, "children": [
+      { "nodeid": 3, "leaf": 0.0425012335, "cover": 2.82300615 },
+      { "nodeid": 4, "leaf": 0.246428773, "cover": 2.2743144 }
+    ]},
+    { "nodeid": 2, "leaf": 0.0400861651, "cover": 2.84864616 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 6.38374805, "cover": 9.18200397, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 1.63153458, "cover": 6.88549995, "children": [
+      { "nodeid": 3, "leaf": 0.0583396405, "cover": 2.97849512 },
+      { "nodeid": 4, "leaf": 0.232872009, "cover": 3.90700507 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0931449085, "cover": 2.29650402 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 8.18361855, "cover": 7.3708415, "children": [
+    { "nodeid": 1, "leaf": -0.198787972, "cover": 3.4241395 },
+    { "nodeid": 2, "leaf": 0.0956730321, "cover": 3.94670224 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.03797054, "cover": 4.63784313, "children": [
+    { "nodeid": 1, "leaf": 0.211713344, "cover": 2.07342839 },
+    { "nodeid": 2, "leaf": -0.0666952729, "cover": 2.56441474 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 7.08462334, "cover": 6.42148781, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.304819107, "cover": 4.38558483, "children": [
+      { "nodeid": 3, "leaf": -0.173852414, "cover": 2.35264087 },
+      { "nodeid": 4, "leaf": -0.0524470769, "cover": 2.0329442 }
+    ]},
+    { "nodeid": 2, "leaf": 0.162023306, "cover": 2.03590274 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Rice", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.18416953, "cover": 7.39437151, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Lux", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 2.3742311, "cover": 4.82589817, "children": [
+      { "nodeid": 3, "leaf": -0.0940923169, "cover": 2.16910458 },
+      { "nodeid": 4, "leaf": 0.0910075083, "cover": 2.65679359 }
+    ]},
+    { "nodeid": 2, "leaf": 0.202178583, "cover": 2.56847334 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.00690174, "cover": 5.6415205, "children": [
+    { "nodeid": 1, "leaf": 0.115541086, "cover": 3.11743474 },
+    { "nodeid": 2, "leaf": -0.0483150482, "cover": 2.52408552 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 6.49578667, "cover": 8.48897839, "children": [
+    { "nodeid": 1, "leaf": -0.0656253174, "cover": 4.30565119 },
+    { "nodeid": 2, "leaf": 0.18349503, "cover": 4.18332672 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 8.62460709, "cover": 9.62239933, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 6.60929632, "cover": 6.93148947, "children": [
+      { "nodeid": 3, "leaf": -0.0022646382, "cover": 3.89287686 },
+      { "nodeid": 4, "leaf": 0.282901406, "cover": 3.03861237 }
+    ]},
+    { "nodeid": 2, "leaf": -0.148787647, "cover": 2.6909101 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.21055001, "yes": 1, "no": 2, "missing": 1, "gain": 10.5523434, "cover": 7.14602089, "children": [
+    { "nodeid": 1, "leaf": -0.28115201, "cover": 3.50607634 },
+    { "nodeid": 2, "leaf": 0.0632300228, "cover": 3.63994455 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.03260565, "cover": 7.70623016, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Cattle", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 7.40058517, "cover": 5.0517621, "children": [
+      { "nodeid": 3, "leaf": -0.180063799, "cover": 2.18026042 },
+      { "nodeid": 4, "leaf": 0.142114013, "cover": 2.87150145 }
+    ]},
+    { "nodeid": 2, "leaf": 0.211369842, "cover": 2.65446854 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 3.46088743, "cover": 8.00828075, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.0952825546, "cover": 5.72492123, "children": [
+      { "nodeid": 3, "leaf": 0.0800784379, "cover": 2.434829 },
+      { "nodeid": 4, "leaf": 0.198559865, "cover": 3.29009223 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0406931899, "cover": 2.28336 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.58878911, "cover": 6.105124, "children": [
+    { "nodeid": 1, "leaf": 0.127404496, "cover": 3.47140265 },
+    { "nodeid": 2, "leaf": -0.0194447264, "cover": 2.63372111 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 8.98644638, "cover": 6.23312902, "children": [
+    { "nodeid": 1, "leaf": -0.0967172384, "cover": 3.76355362 },
+    { "nodeid": 2, "leaf": 0.235986367, "cover": 2.46957517 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "DesertHills", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.63045597, "cover": 7.67866898, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.0526500009, "yes": 3, "no": 4, "missing": 3, "gain": 0.958004475, "cover": 5.29445267, "children": [
+      { "nodeid": 3, "leaf": 0.0606562011, "cover": 2.77471948 },
+      { "nodeid": 4, "leaf": 0.217961609, "cover": 2.51973343 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0516090617, "cover": 2.38421607 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Cattle", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.50015384, "cover": 9.66892719, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.397515893, "cover": 7.46928453, "children": [
+      { "nodeid": 3, "depth": 2, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 0.211083233, "cover": 5.38601446, "children": [
+        { "nodeid": 5, "leaf": 0.0507842824, "cover": 2.66786647 },
+        { "nodeid": 6, "leaf": -0.00508221146, "cover": 2.71814823 }
+      ]},
+      { "nodeid": 4, "leaf": 0.104422301, "cover": 2.08327007 }
+    ]},
+    { "nodeid": 2, "leaf": -0.019087337, "cover": 2.19964242 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.71811199, "cover": 7.08443642, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.99624276, "cover": 5.0582819, "children": [
+      { "nodeid": 3, "leaf": -0.110647209, "cover": 2.77973509 },
+      { "nodeid": 4, "leaf": 0.0582618602, "cover": 2.27854681 }
+    ]},
+    { "nodeid": 2, "leaf": 0.251350701, "cover": 2.02615452 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.19874597, "cover": 5.78544712, "children": [
+    { "nodeid": 1, "leaf": 0.0898955539, "cover": 3.63658214 },
+    { "nodeid": 2, "leaf": -0.0386797041, "cover": 2.14886522 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.17418432, "cover": 5.02218294, "children": [
+    { "nodeid": 1, "leaf": -0.114865378, "cover": 2.87033463 },
+    { "nodeid": 2, "leaf": 0.155251652, "cover": 2.15184832 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 7.04353952, "cover": 6.36923742, "children": [
+    { "nodeid": 1, "leaf": -0.199446857, "cover": 3.84608316 },
+    { "nodeid": 2, "leaf": 0.0966308638, "cover": 2.52315426 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 4.58620644, "cover": 4.86036253, "children": [
+    { "nodeid": 1, "leaf": -0.150097147, "cover": 2.85888791 },
+    { "nodeid": 2, "leaf": 0.109597988, "cover": 2.00147486 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 7.08212042, "cover": 9.45532894, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 3.39658976, "cover": 6.75992966, "children": [
+      { "nodeid": 3, "leaf": -0.011062175, "cover": 2.89077401 },
+      { "nodeid": 4, "leaf": 0.199457794, "cover": 3.86915565 }
+    ]},
+    { "nodeid": 2, "leaf": -0.144579425, "cover": 2.69539952 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.95404088, "cover": 5.77505732, "children": [
+    { "nodeid": 1, "leaf": -0.0575426519, "cover": 2.56537914 },
+    { "nodeid": 2, "leaf": 0.101425327, "cover": 3.20967841 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.04515266, "cover": 5.63256168, "children": [
+    { "nodeid": 1, "leaf": -0.058904741, "cover": 2.09816766 },
+    { "nodeid": 2, "leaf": 0.212517858, "cover": 3.53439379 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.47613668, "cover": 5.7160821, "children": [
+    { "nodeid": 1, "leaf": -0.0498414002, "cover": 2.86115551 },
+    { "nodeid": 2, "leaf": 0.195005491, "cover": 2.85492659 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 8.06431866, "cover": 5.38729334, "children": [
+    { "nodeid": 1, "leaf": -0.15782328, "cover": 2.50525594 },
+    { "nodeid": 2, "leaf": 0.169795573, "cover": 2.88203764 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Stone", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 4.15047407, "cover": 6.47812986, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHills", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.59078264, "cover": 4.26605654, "children": [
+      { "nodeid": 3, "leaf": -0.169923767, "cover": 2.17873359 },
+      { "nodeid": 4, "leaf": 0.00403093128, "cover": 2.08732271 }
+    ]},
+    { "nodeid": 2, "leaf": 0.125761941, "cover": 2.21207333 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Rice", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.13351917, "cover": 4.53492737, "children": [
+    { "nodeid": 1, "leaf": -0.0950889364, "cover": 2.4391129 },
+    { "nodeid": 2, "leaf": 0.0841921195, "cover": 2.09581447 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.22608566, "cover": 7.8446517, "children": [
+    { "nodeid": 1, "leaf": 0.0147736548, "cover": 3.36156154 },
+    { "nodeid": 2, "leaf": 0.267251015, "cover": 4.48308992 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.76408815, "cover": 8.38486958, "children": [
+    { "nodeid": 1, "leaf": 0.172936916, "cover": 3.94848084 },
+    { "nodeid": 2, "depth": 1, "split": "Plains", "split_condition": 0.236850008, "yes": 3, "no": 4, "missing": 3, "gain": 0.848469377, "cover": 4.43638849, "children": [
+      { "nodeid": 3, "leaf": -0.055553481, "cover": 2.17991471 },
+      { "nodeid": 4, "leaf": 0.058098048, "cover": 2.25647378 }
+    ]}
+  ]},
+  { "nodeid": 0, "leaf": -0.106953047, "cover": 4.19999266 },
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 8.34190464, "cover": 6.46810865, "children": [
+    { "nodeid": 1, "leaf": -0.183915213, "cover": 3.69802856 },
+    { "nodeid": 2, "leaf": 0.130271882, "cover": 2.77008009 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 4.4874444, "cover": 5.34768677, "children": [
+    { "nodeid": 1, "leaf": -0.113712437, "cover": 2.32514954 },
+    { "nodeid": 2, "leaf": 0.132554829, "cover": 3.02253699 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.81154323, "cover": 5.12798595, "children": [
+    { "nodeid": 1, "leaf": 0.095390439, "cover": 3.12379146 },
+    { "nodeid": 2, "leaf": -0.065933466, "cover": 2.00419426 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 5.4183569, "cover": 5.03392029, "children": [
+    { "nodeid": 1, "leaf": -0.113713041, "cover": 2.84804797 },
+    { "nodeid": 2, "leaf": 0.162353233, "cover": 2.18587255 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.43675995, "cover": 7.13895035, "children": [
+    { "nodeid": 1, "leaf": 0.16261141, "cover": 3.4056139 },
+    { "nodeid": 2, "leaf": -0.0341031514, "cover": 3.73333645 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 8.50416851, "cover": 9.22904873, "children": [
+    { "nodeid": 1, "leaf": -0.085397251, "cover": 2.62975597 },
+    { "nodeid": 2, "depth": 1, "split": "Cattle", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.51110649, "cover": 6.59929323, "children": [
+      { "nodeid": 3, "leaf": 0.278751493, "cover": 4.2431798 },
+      { "nodeid": 4, "leaf": 0.0545311719, "cover": 2.35611343 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 0.56449604, "cover": 5.27903461, "children": [
+    { "nodeid": 1, "leaf": 0.255182862, "cover": 2.88974953 },
+    { "nodeid": 2, "leaf": 0.0884287208, "cover": 2.38928485 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 10.8399448, "cover": 5.92894983, "children": [
+    { "nodeid": 1, "leaf": -0.0984475464, "cover": 3.54919386 },
+    { "nodeid": 2, "leaf": 0.274443328, "cover": 2.37975574 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 8.18422604, "cover": 5.1285224, "children": [
+    { "nodeid": 1, "leaf": 0.126319513, "cover": 2.98596478 },
+    { "nodeid": 2, "leaf": -0.211904287, "cover": 2.14255762 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Rice", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.6824832, "cover": 9.93370152, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Wheat", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 8.8732996, "cover": 7.76522446, "children": [
+      { "nodeid": 3, "leaf": -0.145069912, "cover": 3.25217819 },
+      { "nodeid": 4, "leaf": 0.156265676, "cover": 4.51304626 }
+    ]},
+    { "nodeid": 2, "leaf": 0.23265852, "cover": 2.1684773 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 1.36865163, "cover": 7.85184288, "children": [
+    { "nodeid": 1, "leaf": -0.024471825, "cover": 3.41149759 },
+    { "nodeid": 2, "leaf": 0.0962366089, "cover": 4.44034529 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Rice", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.58224487, "cover": 6.48617125, "children": [
+    { "nodeid": 1, "leaf": -0.0503430031, "cover": 3.71035504 },
+    { "nodeid": 2, "leaf": 0.156527132, "cover": 2.77581596 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.18525147, "cover": 8.33327484, "children": [
+    { "nodeid": 1, "leaf": -0.0310006216, "cover": 2.22126937 },
+    { "nodeid": 2, "leaf": 0.135147765, "cover": 6.11200523 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Desert", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.17065763, "cover": 8.42656803, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Rice", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.91673517, "cover": 6.25508308, "children": [
+      { "nodeid": 3, "leaf": -0.145877972, "cover": 4.20226192 },
+      { "nodeid": 4, "leaf": 0.0229817741, "cover": 2.05282092 }
+    ]},
+    { "nodeid": 2, "leaf": 0.145101637, "cover": 2.17148495 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.37004805, "cover": 9.66623306, "children": [
+    { "nodeid": 1, "leaf": -0.0790519044, "cover": 2.50176668 },
+    { "nodeid": 2, "depth": 1, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 5.33233643, "cover": 7.16446638, "children": [
+      { "nodeid": 3, "leaf": 0.276866645, "cover": 5.11836958 },
+      { "nodeid": 4, "leaf": -0.0101583991, "cover": 2.0460968 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.21055001, "yes": 1, "no": 2, "missing": 1, "gain": 6.06229067, "cover": 8.44389057, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.39607728, "cover": 5.69454718, "children": [
+      { "nodeid": 3, "leaf": -0.137396723, "cover": 2.67979288 },
+      { "nodeid": 4, "leaf": 0.00472843042, "cover": 3.0147543 }
+    ]},
+    { "nodeid": 2, "leaf": 0.176100388, "cover": 2.74934363 }
+  ]},
+  { "nodeid": 0, "leaf": -0.124351181, "cover": 3.26388478 },
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 12.2719688, "cover": 5.79218483, "children": [
+    { "nodeid": 1, "leaf": -0.239587829, "cover": 2.47398162 },
+    { "nodeid": 2, "leaf": 0.155814394, "cover": 3.31820297 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.29800606, "cover": 7.20689678, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.289499998, "yes": 3, "no": 4, "missing": 3, "gain": 0.180865347, "cover": 4.40793324, "children": [
+      { "nodeid": 3, "leaf": -0.0418103263, "cover": 2.09648323 },
+      { "nodeid": 4, "leaf": 0.0121468361, "cover": 2.31145 }
+    ]},
+    { "nodeid": 2, "leaf": 0.232233092, "cover": 2.79896355 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.184250012, "yes": 1, "no": 2, "missing": 1, "gain": 2.26291132, "cover": 5.56231594, "children": [
+    { "nodeid": 1, "leaf": -0.0628369004, "cover": 2.86491132 },
+    { "nodeid": 2, "leaf": 0.109210961, "cover": 2.69740486 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 0.779576302, "cover": 4.95484638, "children": [
+    { "nodeid": 1, "leaf": -0.0730079561, "cover": 2.52339792 },
+    { "nodeid": 2, "leaf": 0.0331394002, "cover": 2.43144846 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.12409163, "cover": 7.30582714, "children": [
+    { "nodeid": 1, "leaf": 0.181857944, "cover": 5.26345873 },
+    { "nodeid": 2, "leaf": 0.0301558394, "cover": 2.04236817 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0271857008, "cover": 3.60429454 },
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.85133696, "cover": 7.5450964, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Plains", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 1.80306816, "cover": 5.21942425, "children": [
+      { "nodeid": 3, "leaf": -0.00909937732, "cover": 2.26122427 },
+      { "nodeid": 4, "leaf": 0.162271693, "cover": 2.95819998 }
+    ]},
+    { "nodeid": 2, "leaf": -0.179748788, "cover": 2.32567239 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 11.0852299, "cover": 9.02380562, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.236850008, "yes": 3, "no": 4, "missing": 3, "gain": 2.07280445, "cover": 6.85929489, "children": [
+      { "nodeid": 3, "leaf": 0.19147265, "cover": 4.60258055 },
+      { "nodeid": 4, "leaf": 0.00943838898, "cover": 2.25671458 }
+    ]},
+    { "nodeid": 2, "leaf": -0.207613945, "cover": 2.16451097 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 9.40317822, "cover": 6.71474552, "children": [
+    { "nodeid": 1, "leaf": -0.154470742, "cover": 2.9193368 },
+    { "nodeid": 2, "leaf": 0.172805309, "cover": 3.79540896 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 9.45786381, "cover": 7.97262907, "children": [
+    { "nodeid": 1, "depth": 1, "split": "CoastLake", "split_condition": 0.184200004, "yes": 3, "no": 4, "missing": 3, "gain": 0.0451436043, "cover": 5.72114182, "children": [
+      { "nodeid": 3, "leaf": 0.0900628343, "cover": 3.30094433 },
+      { "nodeid": 4, "leaf": 0.200712442, "cover": 2.42019749 }
+    ]},
+    { "nodeid": 2, "leaf": -0.16751413, "cover": 2.25148726 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 1.49380207, "cover": 8.64633751, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.105250001, "yes": 3, "no": 4, "missing": 3, "gain": 0.318507671, "cover": 4.22313643, "children": [
+      { "nodeid": 3, "leaf": -0.0240612607, "cover": 2.00223637 },
+      { "nodeid": 4, "leaf": 0.047706522, "cover": 2.2209003 }
+    ]},
+    { "nodeid": 2, "leaf": 0.143911675, "cover": 4.42320108 }
+  ]},
+  { "nodeid": 0, "leaf": -0.151160493, "cover": 3.34156179 },
+  { "nodeid": 0, "depth": 0, "split": "Rice", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.9738518, "cover": 5.54589987, "children": [
+    { "nodeid": 1, "leaf": -0.0554103702, "cover": 3.11901021 },
+    { "nodeid": 2, "leaf": 0.105945244, "cover": 2.42688966 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 3.7349329, "cover": 5.31633997, "children": [
+    { "nodeid": 1, "leaf": -0.0291993264, "cover": 3.30041718 },
+    { "nodeid": 2, "leaf": 0.204319701, "cover": 2.01592302 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.78962755, "cover": 7.20332098, "children": [
+    { "nodeid": 1, "leaf": 0.163826898, "cover": 4.31464434 },
+    { "nodeid": 2, "leaf": -0.128997535, "cover": 2.8886764 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.63634539, "cover": 7.59078598, "children": [
+    { "nodeid": 1, "leaf": -0.127633691, "cover": 3.47868705 },
+    { "nodeid": 2, "leaf": 0.133392721, "cover": 4.11209869 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 11.3873043, "cover": 7.43222523, "children": [
+    { "nodeid": 1, "leaf": -0.185887963, "cover": 2.70321107 },
+    { "nodeid": 2, "depth": 1, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.3749938, "cover": 4.7290144, "children": [
+      { "nodeid": 3, "leaf": 0.0431710109, "cover": 2.13599253 },
+      { "nodeid": 4, "leaf": 0.228235587, "cover": 2.59302163 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 8.1039505, "cover": 6.608706, "children": [
+    { "nodeid": 1, "leaf": -0.114356704, "cover": 2.95446038 },
+    { "nodeid": 2, "leaf": 0.192610368, "cover": 3.65424585 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.7013824, "cover": 5.29306126, "children": [
+    { "nodeid": 1, "leaf": 0.104198478, "cover": 3.19581676 },
+    { "nodeid": 2, "leaf": -0.0892923996, "cover": 2.0972445 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0435911007, "cover": 3.55415988 },
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 4.22947121, "cover": 7.13580561, "children": [
+    { "nodeid": 1, "leaf": -0.0789238364, "cover": 3.61041117 },
+    { "nodeid": 2, "leaf": 0.13487038, "cover": 3.52539444 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.47934198, "cover": 6.00658512, "children": [
+    { "nodeid": 1, "leaf": -0.169343054, "cover": 3.07576776 },
+    { "nodeid": 2, "leaf": 0.113194495, "cover": 2.93081737 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.42247677, "cover": 4.46838379, "children": [
+    { "nodeid": 1, "leaf": -0.0511535481, "cover": 2.15501809 },
+    { "nodeid": 2, "leaf": 0.145026654, "cover": 2.31336594 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Stone", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.57379723, "cover": 4.87207222, "children": [
+    { "nodeid": 1, "leaf": -0.0104152346, "cover": 2.33687592 },
+    { "nodeid": 2, "leaf": 0.234754398, "cover": 2.53519654 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.3277638, "cover": 4.92179632, "children": [
+    { "nodeid": 1, "leaf": 0.0266244486, "cover": 2.64529133 },
+    { "nodeid": 2, "leaf": 0.18795608, "cover": 2.27650476 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.12641096, "cover": 5.2826705, "children": [
+    { "nodeid": 1, "leaf": 0.0756153241, "cover": 3.24122381 },
+    { "nodeid": 2, "leaf": -0.0958716497, "cover": 2.04144669 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 0.00647808611, "cover": 4.20313931, "children": [
+    { "nodeid": 1, "leaf": 0.00865736883, "cover": 2.11413574 },
+    { "nodeid": 2, "leaf": 0.027392989, "cover": 2.08900356 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.236850008, "yes": 1, "no": 2, "missing": 1, "gain": 1.50017643, "cover": 6.39481354, "children": [
+    { "nodeid": 1, "leaf": -0.243234113, "cover": 4.29911518 },
+    { "nodeid": 2, "leaf": -0.0529702045, "cover": 2.09569836 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.42226887, "cover": 6.12498999, "children": [
+    { "nodeid": 1, "leaf": 0.15057458, "cover": 2.05475831 },
+    { "nodeid": 2, "leaf": -0.113574624, "cover": 4.07023191 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.22788525, "cover": 5.62765455, "children": [
+    { "nodeid": 1, "leaf": -0.0646744743, "cover": 2.81525874 },
+    { "nodeid": 2, "leaf": 0.199671388, "cover": 2.81239605 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0584532171, "cover": 4.26919413 },
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.94036293, "cover": 5.84048796, "children": [
+    { "nodeid": 1, "leaf": 0.0494820476, "cover": 3.3464396 },
+    { "nodeid": 2, "leaf": 0.188090324, "cover": 2.49404836 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.05516577, "cover": 5.10513306, "children": [
+    { "nodeid": 1, "leaf": 0.110118032, "cover": 2.59472752 },
+    { "nodeid": 2, "leaf": -0.154412344, "cover": 2.51040554 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.17670131, "cover": 6.94583845, "children": [
+    { "nodeid": 1, "leaf": -0.0671347976, "cover": 4.17799282 },
+    { "nodeid": 2, "leaf": 0.0892019048, "cover": 2.76784539 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0689119548, "cover": 4.7303915 },
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.667616367, "cover": 7.26752663, "children": [
+    { "nodeid": 1, "leaf": 0.0269320756, "cover": 2.43167019 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 1.22559452, "cover": 4.83585596, "children": [
+      { "nodeid": 3, "leaf": 0.0409874506, "cover": 2.63401318 },
+      { "nodeid": 4, "leaf": 0.206117198, "cover": 2.20184302 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.157900006, "yes": 1, "no": 2, "missing": 1, "gain": 6.31888771, "cover": 6.64257336, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.0761580467, "cover": 4.62633753, "children": [
+      { "nodeid": 3, "leaf": 0.202536121, "cover": 2.10125828 },
+      { "nodeid": 4, "leaf": 0.0811991394, "cover": 2.52507949 }
+    ]},
+    { "nodeid": 2, "leaf": -0.122261837, "cover": 2.01623559 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.68661952, "cover": 6.66360235, "children": [
+    { "nodeid": 1, "leaf": -0.11604321, "cover": 2.91626811 },
+    { "nodeid": 2, "leaf": 0.0890772939, "cover": 3.74733424 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.15962219, "cover": 5.136796, "children": [
+    { "nodeid": 1, "leaf": -0.226728886, "cover": 2.17946053 },
+    { "nodeid": 2, "leaf": 0.0700905994, "cover": 2.95733547 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 8.32145405, "cover": 8.53884792, "children": [
+    { "nodeid": 1, "leaf": -0.0742561668, "cover": 3.32101774 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandMarsh", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.777561188, "cover": 5.2178297, "children": [
+      { "nodeid": 3, "leaf": 0.105816983, "cover": 3.05617094 },
+      { "nodeid": 4, "leaf": 0.288141549, "cover": 2.16165876 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 9.90789986, "cover": 7.68316603, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.342100024, "yes": 3, "no": 4, "missing": 3, "gain": 1.22855961, "cover": 4.77717829, "children": [
+      { "nodeid": 3, "leaf": 0.0025605266, "cover": 2.3954668 },
+      { "nodeid": 4, "leaf": 0.150126994, "cover": 2.38171148 }
+    ]},
+    { "nodeid": 2, "leaf": -0.234539658, "cover": 2.9059875 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 14.1137447, "cover": 6.04620647, "children": [
+    { "nodeid": 1, "leaf": 0.222254932, "cover": 3.80813313 },
+    { "nodeid": 2, "leaf": -0.20221369, "cover": 2.23807335 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.11805487, "cover": 6.64364433, "children": [
+    { "nodeid": 1, "leaf": -0.0575647801, "cover": 2.37342596 },
+    { "nodeid": 2, "leaf": 0.140747234, "cover": 4.27021837 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 11.6974192, "cover": 6.48674154, "children": [
+    { "nodeid": 1, "leaf": 0.270768166, "cover": 2.47393584 },
+    { "nodeid": 2, "leaf": -0.104629308, "cover": 4.01280546 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.21055001, "yes": 1, "no": 2, "missing": 1, "gain": 9.12794971, "cover": 5.73378229, "children": [
+    { "nodeid": 1, "leaf": -0.155278042, "cover": 3.03898287 },
+    { "nodeid": 2, "leaf": 0.185116038, "cover": 2.69479966 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.31389999, "cover": 5.83998251, "children": [
+    { "nodeid": 1, "leaf": -0.0461700223, "cover": 3.03147244 },
+    { "nodeid": 2, "leaf": 0.126344264, "cover": 2.80851007 }
+  ]},
+  { "nodeid": 0, "leaf": -0.101704888, "cover": 2.41505861 },
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.394749999, "yes": 1, "no": 2, "missing": 1, "gain": 6.30860424, "cover": 6.33711624, "children": [
+    { "nodeid": 1, "leaf": -0.0673146248, "cover": 4.06679726 },
+    { "nodeid": 2, "leaf": 0.213349506, "cover": 2.27031898 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 5.86888981, "cover": 7.3521347, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.784431696, "cover": 4.54425097, "children": [
+      { "nodeid": 3, "leaf": 0.0333265588, "cover": 2.49194407 },
+      { "nodeid": 4, "leaf": 0.169728309, "cover": 2.05230713 }
+    ]},
+    { "nodeid": 2, "leaf": -0.138015285, "cover": 2.80788374 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0670466721, "cover": 3.63865185 },
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.16776276, "cover": 6.59684849, "children": [
+    { "nodeid": 1, "leaf": -0.0673922375, "cover": 2.90971041 },
+    { "nodeid": 2, "leaf": 0.2052982, "cover": 3.68713832 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.72686958, "cover": 6.24149275, "children": [
+    { "nodeid": 1, "leaf": 0.239584893, "cover": 3.9952898 },
+    { "nodeid": 2, "leaf": 0.0471988432, "cover": 2.24620295 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 7.94264174, "cover": 5.88907385, "children": [
+    { "nodeid": 1, "leaf": -0.168104962, "cover": 2.45627379 },
+    { "nodeid": 2, "leaf": 0.148446873, "cover": 3.43280029 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.91414881, "cover": 5.6445694, "children": [
+    { "nodeid": 1, "leaf": -0.00336348009, "cover": 2.83923817 },
+    { "nodeid": 2, "leaf": 0.165262803, "cover": 2.80533123 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 11.6431761, "cover": 11.1615515, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.0584201813, "cover": 7.72918558, "children": [
+      { "nodeid": 3, "leaf": 0.110553786, "cover": 2.31041145 },
+      { "nodeid": 4, "leaf": 0.263997555, "cover": 5.41877413 }
+    ]},
+    { "nodeid": 2, "leaf": -0.084909074, "cover": 3.43236637 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.394749999, "yes": 1, "no": 2, "missing": 1, "gain": 18.8998451, "cover": 7.15130329, "children": [
+    { "nodeid": 1, "leaf": -0.155913472, "cover": 3.559129 },
+    { "nodeid": 2, "leaf": 0.296611696, "cover": 3.59217405 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.289499998, "yes": 1, "no": 2, "missing": 1, "gain": 6.41833687, "cover": 6.12400866, "children": [
+    { "nodeid": 1, "leaf": -0.0497431606, "cover": 3.78811574 },
+    { "nodeid": 2, "leaf": 0.237736687, "cover": 2.33589292 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.64669216, "cover": 6.69551992, "children": [
+    { "nodeid": 1, "leaf": 0.116558008, "cover": 4.30347013 },
+    { "nodeid": 2, "leaf": -0.0298041757, "cover": 2.39205003 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.99264812, "cover": 11.2797976, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Lux", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 3.21558118, "cover": 6.11298037, "children": [
+      { "nodeid": 3, "leaf": 0.0663113147, "cover": 2.38514686 },
+      { "nodeid": 4, "leaf": -0.137413025, "cover": 3.72783351 }
+    ]},
+    { "nodeid": 2, "depth": 1, "split": "Grassland", "split_condition": 0.236850008, "yes": 5, "no": 6, "missing": 5, "gain": 0.467067719, "cover": 5.16681719, "children": [
+      { "nodeid": 5, "leaf": 0.217413187, "cover": 2.55471396 },
+      { "nodeid": 6, "leaf": 0.0753668547, "cover": 2.61210322 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.30268335, "cover": 7.50732327, "children": [
+    { "nodeid": 1, "leaf": 0.0553880781, "cover": 4.4800992 },
+    { "nodeid": 2, "leaf": 0.19740665, "cover": 3.02722406 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.342100024, "yes": 1, "no": 2, "missing": 1, "gain": 6.26672554, "cover": 5.76921272, "children": [
+    { "nodeid": 1, "leaf": -0.103078194, "cover": 2.5223186 },
+    { "nodeid": 2, "leaf": 0.182166994, "cover": 3.24689388 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.21055001, "yes": 1, "no": 2, "missing": 1, "gain": 6.30481625, "cover": 7.42074013, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Cattle", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 4.84815645, "cover": 5.0686388, "children": [
+      { "nodeid": 3, "leaf": -0.187502444, "cover": 2.30206871 },
+      { "nodeid": 4, "leaf": 0.0751176253, "cover": 2.76656985 }
+    ]},
+    { "nodeid": 2, "leaf": 0.213557586, "cover": 2.35210133 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.105250001, "yes": 1, "no": 2, "missing": 1, "gain": 0.648434401, "cover": 4.31536293, "children": [
+    { "nodeid": 1, "leaf": 0.00929885078, "cover": 2.19207001 },
+    { "nodeid": 2, "leaf": 0.125009283, "cover": 2.12329292 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.22962761, "cover": 7.00948143, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Lux", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.11291218, "cover": 4.94636488, "children": [
+      { "nodeid": 3, "leaf": -0.00812471565, "cover": 2.05014944 },
+      { "nodeid": 4, "leaf": 0.13060236, "cover": 2.89621568 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0839971751, "cover": 2.06311631 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.394749999, "yes": 1, "no": 2, "missing": 1, "gain": 3.40876818, "cover": 6.51154089, "children": [
+    { "nodeid": 1, "leaf": -0.0529198796, "cover": 3.54603577 },
+    { "nodeid": 2, "leaf": 0.147810549, "cover": 2.96550536 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.61225986, "cover": 7.54131603, "children": [
+    { "nodeid": 1, "leaf": 0.0397263095, "cover": 4.25786638 },
+    { "nodeid": 2, "leaf": 0.224753767, "cover": 3.28344965 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 4.66452885, "cover": 8.08930588, "children": [
+    { "nodeid": 1, "leaf": 0.224671364, "cover": 5.64405632 },
+    { "nodeid": 2, "leaf": -0.0204185359, "cover": 2.4452498 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00448750192, "cover": 3.24183893 },
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.157900006, "yes": 1, "no": 2, "missing": 1, "gain": 4.86819983, "cover": 5.21946955, "children": [
+    { "nodeid": 1, "leaf": 0.119421877, "cover": 2.57100892 },
+    { "nodeid": 2, "leaf": -0.137731194, "cover": 2.64846063 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 2.29120612, "cover": 6.21524334, "children": [
+    { "nodeid": 1, "leaf": -0.113745578, "cover": 2.22779965 },
+    { "nodeid": 2, "leaf": 0.0556660704, "cover": 3.98744369 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0221528281, "cover": 3.86597633 },
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.18557644, "cover": 5.06505823, "children": [
+    { "nodeid": 1, "leaf": -0.101456553, "cover": 2.8358016 },
+    { "nodeid": 2, "leaf": 0.0741124302, "cover": 2.22925639 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.90263414, "cover": 5.94013023, "children": [
+    { "nodeid": 1, "leaf": -0.0462077223, "cover": 2.75090456 },
+    { "nodeid": 2, "leaf": 0.180520937, "cover": 3.18922544 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0997376889, "cover": 3.97344351 },
+  { "nodeid": 0, "depth": 0, "split": "Stone", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 3.5375638, "cover": 9.05195141, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.131600007, "yes": 3, "no": 4, "missing": 3, "gain": 3.82658219, "cover": 6.87893057, "children": [
+      { "nodeid": 3, "leaf": -0.156820506, "cover": 3.63332152 },
+      { "nodeid": 4, "leaf": 0.052760087, "cover": 3.24560928 }
+    ]},
+    { "nodeid": 2, "leaf": 0.131972551, "cover": 2.17302084 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.7086544, "cover": 9.65373039, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Lux", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 3.56458974, "cover": 5.67309332, "children": [
+      { "nodeid": 3, "leaf": -0.107323028, "cover": 2.93223166 },
+      { "nodeid": 4, "leaf": 0.106072932, "cover": 2.74086142 }
+    ]},
+    { "nodeid": 2, "leaf": 0.244446248, "cover": 3.98063731 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.236850008, "yes": 1, "no": 2, "missing": 1, "gain": 5.45893526, "cover": 6.51259613, "children": [
+    { "nodeid": 1, "leaf": -0.0722613856, "cover": 2.62012815 },
+    { "nodeid": 2, "leaf": 0.187507719, "cover": 3.89246821 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 17.1178074, "cover": 8.00256538, "children": [
+    { "nodeid": 1, "leaf": -0.257702291, "cover": 3.88396001 },
+    { "nodeid": 2, "leaf": 0.153053507, "cover": 4.11860561 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 6.23495102, "cover": 5.62528801, "children": [
+    { "nodeid": 1, "leaf": -0.106125012, "cover": 3.11234117 },
+    { "nodeid": 2, "leaf": 0.17842117, "cover": 2.51294661 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Stone", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.30987501, "cover": 6.81814718, "children": [
+    { "nodeid": 1, "leaf": -0.0394622013, "cover": 2.80551076 },
+    { "nodeid": 2, "leaf": 0.241553634, "cover": 4.01263666 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Plains", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 1.66348636, "cover": 5.06665421, "children": [
+    { "nodeid": 1, "leaf": -0.023069514, "cover": 2.42559743 },
+    { "nodeid": 2, "leaf": 0.136231124, "cover": 2.64105678 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.4197135, "cover": 8.17816734, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.0718421638, "cover": 4.27712679, "children": [
+      { "nodeid": 3, "leaf": -0.000427316525, "cover": 2.27496791 },
+      { "nodeid": 4, "leaf": 0.0362560339, "cover": 2.00215888 }
+    ]},
+    { "nodeid": 2, "leaf": 0.21718514, "cover": 3.90104103 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 0.546538353, "cover": 4.48328924, "children": [
+    { "nodeid": 1, "leaf": -0.0847848356, "cover": 2.44490933 },
+    { "nodeid": 2, "leaf": -0.251201272, "cover": 2.03837991 }
+  ]},
+  { "nodeid": 0, "leaf": -0.16165106, "cover": 2.29008961 },
+  { "nodeid": 0, "depth": 0, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.13595963, "cover": 6.5956192, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.579452515, "cover": 4.1394825, "children": [
+      { "nodeid": 3, "leaf": 0.310146481, "cover": 2.06525397 },
+      { "nodeid": 4, "leaf": 0.103874072, "cover": 2.07422853 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0579197407, "cover": 2.45613647 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Lux", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 2.41942787, "cover": 7.8772006, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 3.81740046, "cover": 4.7416296, "children": [
+      { "nodeid": 3, "leaf": -0.06951648, "cover": 2.36653876 },
+      { "nodeid": 4, "leaf": 0.169694006, "cover": 2.37509108 }
+    ]},
+    { "nodeid": 2, "leaf": 0.240925387, "cover": 3.13557076 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.131600007, "yes": 1, "no": 2, "missing": 1, "gain": 2.39048672, "cover": 7.46099615, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.05856705, "cover": 5.24353695, "children": [
+      { "nodeid": 3, "leaf": 0.0893673599, "cover": 2.77316999 },
+      { "nodeid": 4, "leaf": -0.0777871013, "cover": 2.47036672 }
+    ]},
+    { "nodeid": 2, "leaf": 0.184365958, "cover": 2.21745944 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsWoods", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 7.97071648, "cover": 5.42965126, "children": [
+    { "nodeid": 1, "leaf": 0.129626065, "cover": 2.95766783 },
+    { "nodeid": 2, "leaf": -0.195715666, "cover": 2.47198319 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 8.01252174, "cover": 9.62194061, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.17296791, "cover": 6.92814398, "children": [
+      { "nodeid": 3, "leaf": 0.183065593, "cover": 4.3166461 },
+      { "nodeid": 4, "leaf": 0.00626775436, "cover": 2.61149836 }
+    ]},
+    { "nodeid": 2, "leaf": -0.154464453, "cover": 2.69379663 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.42997301, "cover": 6.48842621, "children": [
+    { "nodeid": 1, "leaf": 0.0956044048, "cover": 4.0019269 },
+    { "nodeid": 2, "leaf": -0.0383811332, "cover": 2.48649931 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.99741983, "cover": 6.42813873, "children": [
+    { "nodeid": 1, "leaf": -0.118399739, "cover": 3.46613312 },
+    { "nodeid": 2, "leaf": 0.146117955, "cover": 2.96200538 }
+  ]},
+  { "nodeid": 0, "leaf": -0.024183955, "cover": 3.21823215 },
+  { "nodeid": 0, "depth": 0, "split": "OtherBonus", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 6.18430042, "cover": 7.25148582, "children": [
+    { "nodeid": 1, "leaf": -0.0379209369, "cover": 3.50239921 },
+    { "nodeid": 2, "leaf": 0.227010369, "cover": 3.74908638 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 4.52700233, "cover": 6.79703188, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandHillsWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 1.44580162, "cover": 4.51293707, "children": [
+      { "nodeid": 3, "leaf": 0.0429571755, "cover": 2.46939659 },
+      { "nodeid": 4, "leaf": -0.106593698, "cover": 2.04354072 }
+    ]},
+    { "nodeid": 2, "leaf": 0.203972116, "cover": 2.28409457 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 8.84440231, "cover": 5.75941324, "children": [
+    { "nodeid": 1, "leaf": -0.200192571, "cover": 3.38730955 },
+    { "nodeid": 2, "leaf": 0.139305547, "cover": 2.37210369 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0323316492, "cover": 3.79167938 },
+  { "nodeid": 0, "depth": 0, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 4.42095661, "cover": 5.35580873, "children": [
+    { "nodeid": 1, "leaf": -0.138049647, "cover": 2.15252233 },
+    { "nodeid": 2, "leaf": 0.107099295, "cover": 3.20328641 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.95657825, "cover": 7.54228687, "children": [
+    { "nodeid": 1, "depth": 1, "split": "OtherBonus", "split_condition": 0.0789500028, "yes": 3, "no": 4, "missing": 3, "gain": 0.252266288, "cover": 4.41858292, "children": [
+      { "nodeid": 3, "leaf": 0.028138252, "cover": 2.37983298 },
+      { "nodeid": 4, "leaf": 0.113928638, "cover": 2.03875017 }
+    ]},
+    { "nodeid": 2, "leaf": 0.261970192, "cover": 3.12370396 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.184200004, "yes": 1, "no": 2, "missing": 1, "gain": 1.16292334, "cover": 5.28531027, "children": [
+    { "nodeid": 1, "leaf": -0.0612227209, "cover": 3.14904523 },
+    { "nodeid": 2, "leaf": 0.0651635304, "cover": 2.1362648 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.342100024, "yes": 1, "no": 2, "missing": 1, "gain": 4.51066971, "cover": 7.7556591, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 2.46988773, "cover": 5.39791203, "children": [
+      { "nodeid": 3, "leaf": 0.0575325377, "cover": 3.30770087 },
+      { "nodeid": 4, "leaf": -0.12645629, "cover": 2.09021091 }
+    ]},
+    { "nodeid": 2, "leaf": 0.205129504, "cover": 2.35774708 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandHills", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 1.47089386, "cover": 7.10747004, "children": [
+    { "nodeid": 1, "leaf": 0.00542598078, "cover": 3.04878926 },
+    { "nodeid": 2, "depth": 1, "split": "GrasslandWoods", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.00988531113, "cover": 4.05868101, "children": [
+      { "nodeid": 3, "leaf": 0.174863428, "cover": 2.04386759 },
+      { "nodeid": 4, "leaf": 0.0665538833, "cover": 2.01481318 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 1.04825401, "cover": 6.76750755, "children": [
+    { "nodeid": 1, "leaf": 0.236785501, "cover": 4.06522417 },
+    { "nodeid": 2, "leaf": 0.0729928762, "cover": 2.70228314 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 0.877962589, "cover": 4.80650282, "children": [
+    { "nodeid": 1, "leaf": -0.155368894, "cover": 2.34983587 },
+    { "nodeid": 2, "leaf": -0.0215664171, "cover": 2.45666718 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "CoastLake", "split_condition": 0.0789500028, "yes": 1, "no": 2, "missing": 1, "gain": 5.75082111, "cover": 9.56162643, "children": [
+    { "nodeid": 1, "depth": 1, "split": "GrasslandMarsh", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.702266693, "cover": 7.33956003, "children": [
+      { "nodeid": 3, "leaf": 0.243851408, "cover": 4.53087711 },
+      { "nodeid": 4, "leaf": 0.0893695354, "cover": 2.8086834 }
+    ]},
+    { "nodeid": 2, "leaf": -0.059190359, "cover": 2.2220664 }
+  ]},
+  { "nodeid": 0, "leaf": -0.194064677, "cover": 3.26817036 },
+  { "nodeid": 0, "depth": 0, "split": "Wheat", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 3.2030139, "cover": 9.55998611, "children": [
+    { "nodeid": 1, "depth": 1, "split": "PlainsHillsRainforest", "split_condition": 0.0263, "yes": 3, "no": 4, "missing": 3, "gain": 0.767369747, "cover": 5.4419713, "children": [
+      { "nodeid": 3, "leaf": 0.0500033908, "cover": 2.2248342 },
+      { "nodeid": 4, "leaf": 0.196535438, "cover": 3.2171371 }
+    ]},
+    { "nodeid": 2, "depth": 1, "split": "PlainsMountain", "split_condition": 0.0263, "yes": 5, "no": 6, "missing": 5, "gain": 0.881077528, "cover": 4.11801529, "children": [
+      { "nodeid": 5, "leaf": -0.074662596, "cover": 2.10821438 },
+      { "nodeid": 6, "leaf": 0.0449425317, "cover": 2.00980067 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "GrasslandMountain", "split_condition": 0.0263, "yes": 1, "no": 2, "missing": 1, "gain": 5.62609386, "cover": 8.73901272, "children": [
+    { "nodeid": 1, "depth": 1, "split": "Grassland", "split_condition": 0.131600007, "yes": 3, "no": 4, "missing": 3, "gain": 1.53550148, "cover": 6.13209677, "children": [
+      { "nodeid": 3, "leaf": 0.205805957, "cover": 3.52689457 },
+      { "nodeid": 4, "leaf": 0.0370363593, "cover": 2.60520196 }
+    ]},
+    { "nodeid": 2, "leaf": -0.0947810337, "cover": 2.60691571 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Grassland", "split_condition": 0.21055001, "yes": 1, "no": 2, "missing": 1, "gain": 3.36677837, "cover": 4.85635853, "children": [
+    { "nodeid": 1, "leaf": 0.00454607327, "cover": 2.73737121 },
+    { "nodeid": 2, "leaf": 0.24405092, "cover": 2.11898756 }
+  ]}
+]
