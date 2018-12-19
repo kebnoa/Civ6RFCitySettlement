@@ -6,28 +6,27 @@ This project uses Machine Learning, specifically a XGBoost Binary Classifier and
 
 ![SHAP impact on model Summary](/Analysis/Images/SHAP_summary_01.png)
 
-This diagram summarises the influence the various plots at city settlement have on its eventual prosperity. Simplified, the model recommends the following in order of impact:
+This diagram summarises the influence the various plots at city settlement have on its eventual prosperity. Simplified, the model recommends the following in order of significance (desireability?):
 
-* Grassland (Hills) with Woods are desirable and the more the merrier.
-* Plains with Rainforest are desireable and the more the merrier.
-* Having a luxury (or two) is great.
-* Coast and Lake tiles should be minimised.
-* Plains with Woods are positive if you have many of them.
-* Rice is good to have
-* Desert (Hills) should be minimised
-* The following are positive to some degree:
-  * Other Bonuses (Not Wheat, Stone, Cattle, Rice, or Horses)
-  * Grassland with Woods
-  * Grassland
-  * Stone
-  * Grassland with Mountain
-  * Wheat
-  * Plains (Hills) with Rainforest
-  * Cattle
-* The following should be avoided:
-  * Desert Floodplains
-* Some Plains are beneficial
-* Grassland (Hills) are not very impactful, but higher seems to be negative.
+* 2 or more Grassland (Hills) with Woods tiles are great. (1 is better than none, though)
+* 1x Luxury is great. (More than 1 isn't significant, not having one is significantly negative).
+* 2x Stone is good. (1 is better than none)
+* Bonus resources are good and are significant in this order of preference:
+  * 1x Bananas tile.
+  * 1x Rice tile, more than 1 isn't significant.
+  * 2 or more Wheat tiles.
+  * 1x Deer tile
+  * 1x Fish tile
+* 2x Plains with Woods is good.
+* 2x Plains (Hills) with Rainforest is good.
+* Minimal, or no, Grassland with Woods tiles are preferable.
+* Plains with Rainforest are positive.
+* 8 or more Grassland tiles are positive. (Less than this is generally negative)
+* 4 or more Grassland (Hills) tiles are positive.
+* 1x Coast and Lake tile is marginally positive, more than this is negative.
+* Minimal Plains tiles are preferable.
+* 1 or more Grassland Mountain tiles are positive
+* Not settling next to a River is negative.
 
 Read the full report: [Civ6RFCitySettlement.pdf](Civ6RFCitySettlement.pdf)
 
@@ -35,7 +34,7 @@ Read the full report: [Civ6RFCitySettlement.pdf](Civ6RFCitySettlement.pdf)
 
 1. A Civilization 6 Mod - KebnoaLogger (and an associated Live Tuner Panel)
 2. A SQLite database to store the information captured via the Mod
-3. A Jupyter/Python based set of workbooks to train and explore a XGBoost model as imput to a Shapley co-operation game theory explanation SHAP of desirable features.
+3. A Jupyter/Python based set of workbooks to train and explore a XGBoost model as imput to a Shapley co-operation game theory explanation, using SHAP, of desirable features.
 
 ### 1. KebnoaLogger
 
@@ -81,13 +80,17 @@ Save this to the features and labels csv files for use by XGBoost.
 
 According to [Kaggle](https://www.kaggle.com/) XGBoost is very successful at creating winning ML Models. After using it I have to agree it is remarkable easy to use and produced a decent model with limited data.
 
-#### 05b Modelling - Explore the XGBoost model
+#### 05b Modelling - Tune XGBoost model
+
+Use randomized search cross-validation to improve the model. One interesting observation is that training for optimal Recall and combination of metrics with Recall produced less accurate models than simply tuning for balanced_accuracy/auc. That is, the optimal model based on the available data was foudn by optimising for the Area Under the Curve.
+
+#### 05c Modelling - Explore and evaluate the XGBoost model
 
 Use the SHAP Python module to interpret the model.
 
 ## Contribute
 
-**Help gather more data.** Rough guideline is that you need 20 observations per feature. If we used all the available features we need around 1000-1500 observations. At the moment I grouped many features together. That is, I think the model could be improved by gathering more data.
+**Help gather more data.** The rough guideline is that you need 20 observations per feature. If we used all the available features we need around 1000-1500 observations. At the moment I grouped many features together. That is, I think the model could be improved by gathering more data.
 
 **Improve the Civ 6 mod.** This is the first mod I've written and there are some flaws. For example, I wasn't able to store the state. That is, you need to play all 53-55 turns in one sitting. Also using the Live Tuner to export the Json is not exactly user friendly.
 
