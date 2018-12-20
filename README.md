@@ -30,7 +30,7 @@ This diagram summarises the influence the various plots at city settlement have 
 
 Read the full report: [Civ6RFCitySettlement.pdf](Civ6RFCitySettlement.pdf)
 
-## The project contains 3 major components:
+## The project contains 3 major components
 
 1. A Civilization 6 Mod - KebnoaLogger (and an associated Live Tuner Panel)
 2. A SQLite database to store the information captured via the Mod
