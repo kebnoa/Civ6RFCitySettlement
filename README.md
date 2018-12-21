@@ -28,7 +28,7 @@ This diagram summarises the influence the various plots at city settlement have 
 * 1 or more Grassland Mountain tiles are positive
 * Not settling next to a River is negative.
 
-Read the full report: [Civ6RFCitySettlement.pdf](Civ6RFCitySettlement.pdf)
+Read the full report: [Civ6RFCItySettlement.pdf](Civ6RFCItySettlement.pdf)
 
 ## The project contains 3 major components
 
